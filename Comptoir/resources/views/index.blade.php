@@ -18,19 +18,10 @@
                 </div>
    </div>
    <div class="grid_8">
-      <h2 class="h2-4">devis</h2>
-      <div class="p2">
-         {!! Form::open([]) !!}
-         {!! Form::text('nom', null, ['placeholder'=> 'Nom']) !!}
-         </br>
-         {!! Form::email('email', null, ['placeholder'=> 'Email']) !!}
-         </br>
-         {!! Form::text('sujet', null, ['placeholder'=> 'Sujet']) !!} 
-         </br>
-         {!! Form::textarea('message', null, ['placeholder'=> 'Message']) !!}
-         {!! Form::submit('Envoyer !') !!}
-         {!! Form::close() !!}
-      </div>
+      <h2 class="h2-4">Nous contacter:</h2>
+            <div class="map img-border">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2622.865252821858!2d2.3339578507963727!3d48.89890510570625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66ef82dd9bb33%3A0xc45e795a1b7a5ea5!2s13+Rue+Jean+Varenne%2C+75018+Paris-18E-Arrondissement!5e0!3m2!1sfr!2sfr!4v1451303484820" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>                </div>
+           
    </div>
    <div class="grid_24 align-c">
       <h2 class="h2-2">Notre secteur d'activité:</h2>
