@@ -10,9 +10,9 @@
             <dl class="adr">
                 <dt>Action</dt>
                 <dd class="upper">13 Rue Jean Varenne, 75018 Paris</dd>
-                <dd><span class="upper">Telephone:</span><strong>+1 959 603 6035</strong></dd>
-                <dd><span class="upper">Fax:</span><strong>+1 504 889 9898</strong></dd>
-                <dd><span class="upper">Email:</span><a href="#" class="link">mail@demolink.org</a></dd>
+                <dd><span class="upper">Telephone:</span><strong></strong></dd>
+                <dd><span class="upper">Fax:</span><strong></strong></dd>
+                <dd><span class="upper">Email:</span><a href="#" class="link">contact@comptoirduparasol.fr</a></dd>
             </dl> 
         </div>
         <div class="grid_16 prefix_1">
@@ -20,8 +20,16 @@
             <form id="form" method="post" >
               <fieldset>
                 <label><strong>Nom:</strong><input type="text" value=""></label>
-                <label><strong>Email:</strong><input type="text" value=""></label>
+                <label><strong>Prenom:</strong><input type="text" value=""></label>
+                    <label><strong>Email:</strong><input type="text" value=""></label>
                 <label><strong>Message:</strong><textarea></textarea></label>
+                <INPUT type="checkbox" name="choix1" value="1"> Anniversaire
+                <INPUT type="checkbox" name="choix1" value="2"> Mariage
+                 <INPUT type="checkbox" name="choix1" value="3"> Cocktail / Soirée entreprise
+                 <INPUT type="checkbox" name="choix1" value="4"> Réunion de famille
+                <INPUT type="checkbox" name="choix1" value="5"> Communion / Baptême
+                                    <INPUT type="checkbox" name="choix1" value="6"> Séminaire / Congrès
+                                        <INPUT type="checkbox" name="choix1" value="1"> Autre ( à préciser)
                 <div class="btns"><a href="#" class="link-1">Effacer</a><a href="#" class="link-1" onClick="document.getElementById('form').submit()">Envoyer</a></div>
               </fieldset>  
             </form> 

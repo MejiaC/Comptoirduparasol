@@ -1,5 +1,5 @@
    <header> 
-       <h1><a href="index.html"><img src="" alt=""></a></h1> 
+       <h1><a href="index.php"><img src="../images/logocdp.gif" alt=""></a></h1> 
 
        <nav class="nav-bg">  
               <ul class="menu">
