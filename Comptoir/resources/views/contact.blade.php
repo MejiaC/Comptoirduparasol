@@ -45,19 +45,20 @@ $civilite = [
 "association" => "Association",
 "mairie" => "Mairie",
 "autre" => "Autre",
-];
+]
 ?>
+;
 
 @extends('layouts.common')
 @section('content')
 <section id="content">
     <div class="container_24 top-3">
-        <div class="grid_24 container_24">
+        <div class="grid_16 container_24">
             <h2 class="h2-4">Demande de devis</h2>
 
             <form action="" method="POST">
             <h3>Prestation</h3>
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5">Type d'évènement</span>
                 <select name="event_types" required>
                     @foreach($event_types as $value => $front)
@@ -66,12 +67,12 @@ $civilite = [
                 </select>
             </label>
 
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5">Date de l'évènement</span>
                 <input type="date" name="date"/>
             </label>
 
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5">Nombre de convives estimé</span>
                 <select name="personnes">
                     @foreach($personnes as $value => $front)
@@ -80,12 +81,12 @@ $civilite = [
                 </select>
             </label>
 
-            <label class"grid_24">
+            <label class"grid_16">
                 <span class="label grid_5">Où doit se passer l'événement</span>
                 <input type="text" name="lieu" required/>
             </label>
 
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5">Dans un rayon de</span>
                 <select name"rayon_km" required>
                     @foreach($rayon_km as $value => $front)
@@ -94,7 +95,7 @@ $civilite = [
                 </select>
             </label>
 
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5">Type de prestations recherchées pour du matériel</span>
                 <ul class="grid_8">
                 @foreach($accessoires as $value => $front)
@@ -103,13 +104,13 @@ $civilite = [
                 </ul>
             </label>   
 
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5">Indiquez toutes les informations complémentaires importantes pour que nous puissions traiter votre demande au mieux</span>
                 <textarea name="informations" rows="5" cols="70"></textarea>
             </label>   
 
             <h3>Coordonnées</h3>
-            <label class="grid_24">
+            <label class="grid_16">
                 <span class="label grid_5"> Civilité</span>
                 <select name="civilite" required>
                     @foreach($civilite as $value => $front)
@@ -152,7 +153,6 @@ $civilite = [
                 <input type="submit" value="Envoyer"/>
             </div>
             </form>
-
         </div>
     </div>
 </section> 

@@ -1,7 +1,7 @@
 /* Global properties ======================================================== */
 html, body {width:100%; padding:0; margin:0;}
 
-body { 	 
+body {
 	font: 12px/18px Arial, Helvetica, sans-serif;
 	min-width:960px;
 	background: url() 0 0 repeat-x ;
@@ -50,7 +50,7 @@ ul.list-1 li a:hover {text-decoration:underline;}
 .extra-wrap {overflow:hidden;}
 .fleft {float:left;}
 .fright {float:right;}
-.img-indent {float:left; margin:5px 10px 0px 0;}	
+.img-indent {float:left; margin:5px 10px 0px 0;}
 .line-height {line-height:18px;}
 .last {margin-right:0px !important; padding-right:0px !important;}
 .align-r {text-align:right;}
@@ -171,14 +171,14 @@ dl.adr dd a:hover {}
 #form label {position:relative;display: block; min-height:35px; overflow:hidden;}
 .btns {text-align:right; overflow:hidden; width:590px; padding-top:10px; }
 .btns a {display:inline-block; margin-left:31px;}
-#form label strong {float:left; display:block; padding-top:8px; line-height:15px; width:70px;color:#85a09d; white-space:nowrap;} 
+#form label strong {float:left; display:block; padding-top:8px; line-height:15px; width:70px;color:#85a09d; white-space:nowrap;}
 
 
 .grid_8-1
 
 {
   width:500px;
-  background-color:; 
+  background-color:;
 font : 13px/1.4em "Open Sans",sans-serif;
 }
 
@@ -188,15 +188,15 @@ input,textarea{
     border-radius: 3px;
 }
 
-label {
+form label {
     margin: 10px;
 }
 
 .grid_10-1{
-line-height:34px; 
-display:block; 
-border-bottom:#d2d9d8 2px solid; 
-border-top:#d2d9d8 2px solid; 
+line-height:34px;
+display:block;
+border-bottom:#d2d9d8 2px solid;
+border-top:#d2d9d8 2px solid;
 text-align:left;
 }
 
@@ -245,32 +245,7 @@ text-align:center;
 }
 
 
-
-<===================================== SLIDER ===================>
-#slideshow {
-    position: relative;
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #ddd;
-    margin: 0 auto 2em;
-    background: #FFF;
-    background: -webkit-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
-    background: -moz-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
-    background: -ms-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
-    background: -o-linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
-    background: linear-gradient(#FFF, #FFF 20%, #EEE 80%, #DDD);
-    /*-- CSS3 --*/
-    -webkit-border-radius: 2px 2px 2px 2px;
-    -moz-border-radius: 2px 2px 2px 2px;
-    border-radius: 2px 2px 2px 2px;
-    
-    -webkit-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-    -moz-box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-    box-shadow: 0 0 3px rgba(0,0,0, 0.2);
-}
-
-
-/*-- Ombrage CSS3 --*/
+/*-- Ombrage CSS3 ------ FORMULAIRE CONTACT DEVIS --*/
 
 .container_24 form{
     max-width: 500px;
@@ -291,7 +266,7 @@ text-align:center;
     border-bottom: 2px solid #2781bb;
     border-top-style: none;
     border-right-style: none;
-    border-left-style: none;   
+    border-left-style: none;
     color: #fff;
 }
 .grid_24 input[type="submit"]:hover,
@@ -302,4 +277,10 @@ text-align:center;
 .grid_24 input[typepe="text"]:focus {
     color:#0CF;
 }
-    
+
+
+/*-- COORDONNES SUR LA PAGE INDEX --*/
+
+.coordonnees {
+	margin-top:100px;
+}

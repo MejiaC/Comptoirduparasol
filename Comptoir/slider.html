@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider</title>
+  <<style>
+  #slider {
+      opacity:1;
+      transition: opacity 1s;
+  }
+
+  #slider.fadeOut {
+      opacity:0;
+  }
+  </style>
+</head>
+<body>
+<img id="slider" src="http://placehold.it/50x200">
+
+      <script type="text/javascript">
+      var imgArray = [
+            'http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/Best-Wallpapers-18.jpg',
+            'http://cdn.wonderfulengineering.com/wp-content/uploads/2014/09/Best-Wallpapers-18.jpg',
+            'http://wallpapershdfine.com/wp-content/gallery/best-images-for-wallpaper/Best-Wallpapers_Pack1-8.jpg',
+            'http://www.download-free-wallpaper.com/img62/yxirqkzhhthjioqmspny.jpg'],
+
+          curIndex = 0;
+          imgDuration = 3000;
+
+      function slideShow() {
+          document.getElementById('slider').className += "fadeOut";
+          setTimeout(function() {
+              document.getElementById('slider').src = imgArray[curIndex];
+              document.getElementById('slider').className = "";
+          },1000);
+          curIndex++;
+          if (curIndex == imgArray.length) { curIndex = 0; }
+          setTimeout(slideShow, imgDuration);
+      }
+      slideShow();
+
+      </script>
+  </ul>
+</div>
+
+
+
+</body>
+</html>
