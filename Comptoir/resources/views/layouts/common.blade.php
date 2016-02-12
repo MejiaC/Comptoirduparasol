@@ -12,7 +12,6 @@
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
     <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
-    <script src="js/jquery.flexslider-min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
