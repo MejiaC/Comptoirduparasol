@@ -8,6 +8,7 @@ body {
 }
 .main {
     font-family:"lato",sans-serif; font-size:12px;
+
 }
 /***********************************************************************/
 a {text-decoration:none; cursor:pointer;text-decoration:none; }
@@ -38,7 +39,7 @@ h3>span {display:block; margin-top:-2px;}
 h4{ font-size:10px; line-height:20px; font-weight:800;  font-family: 16px/1.4em Signika,sans-serif; text-transform:uppercase;}
 
 
-ul {margin:0; padding:0;list-style-image:none;}
+ul {margin:0; padding:8px 0px 0px 0px;list-style-image:none;}
 ul.list-1 li {padding:0px 0 6px 12px; font-size:11px; line-height:18px; text-transform:uppercase; background:url(../images/marker-1.gif) 0 7px no-repeat;}
 ul.list-1 li a {color:#85a09d;}
 ul.list-1 li a:hover {text-decoration:underline;}
@@ -279,8 +280,136 @@ text-align:center;
 }
 
 
+
 /*-- COORDONNES SUR LA PAGE INDEX --*/
 
-.coordonnees {
-	margin-top:100px;
+.header-horaires {
+	padding-bottom:10px;
+	margin-bottom:14px;
+	margin-top:88px;
 }
+.header-horaires {
+    border-bottom: 3px solid #bdb7a4;
+		}
+
+.center{
+	width:79.5%;
+}
+body ul#open-hours {
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	width:16.5%;
+}
+body ul#open-hours li {
+	margin-bottom:6px;
+ }
+body ul#open-hours li .date-day {
+	font-weight:bold;
+}
+body ul#open-hours li .hours-date {
+	text-align:right;
+	font-size:12px;
+}
+body ul#open-hours li, body #main ul.menu-items li, .type-post {
+	border-bottom:1px dotted #bdb7a4;
+}
+
+
+/*
+
+/*-- PRODUITS --*/
+
+.col-md-6 {
+	float:left;
+	width:50%;
+	position: relative;
+	min-height: 1px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.description {
+	display:none;
+}
+
+
+/*-- Services --*/
+
+.grid2column {font-style:italic; font-size:16px;}
+
+.li.services  {
+	border-bottom: 1px dotted #bdb7a4;
+}
+
+.width-container, #page-title-divider {
+	width:900px;
+	margin: 0 auto;
+}
+#main {
+	padding:42px 0px 40px 0px;
+}
+.widget-area-highlight {
+	padding:35px 0px 35px 0px;
+	margin:-10px 0px 0px 0px;
+	position:relative;
+	top:40px;}
+
+	body {
+		font-size: 13px;
+		line-height: 1.4;
+		color:#777777;
+	}
+
+	body {
+	font-family:"Helvetica Neue", Helvetica, Arial, Sans-Serif;
+}
+
+.grid2column {
+	width: 48.5%;
+	float: left;
+	font-family: 'Droid Serif', serif;
+}
+.header-underline {
+	padding-bottom:10px;
+	margin-bottom:14px;
+}
+.header-underline {
+    border-bottom: 3px solid #bdb7a4;
+		}
+body #main ul.menu-items {
+	margin:0px;
+	padding:8px 0px 0px 0px;
+	list-style:none;
+}
+body #main ul.menu-items li {
+	margin-bottom:10px;
+	padding:0px 10px 10px 10px;
+}
+
+
+body .lastcolumn {
+	margin-right:0% !important;
+	text-align: right;
+}
+
+body ul#open-hours li, body #main ul.menu-items li, .type-post {
+	border-bottom:1px dotted #bdb7a4;
+}
+/*
+=============================================== 08. MENU STYLES ===============================================
+*/
+.menu-spacer {width:100%; overflow:hidden; height:25px;}
+
+body #main ul.menu-items .lastcolumn {text-align:right;}
+
+body #main ul.menu-items {margin:0px; padding:8px 0px 0px 0px; list-style:none;}
+body #main ul.menu-items li {margin-bottom:10px; padding:0px 10px 10px 10px; border-bottom: 1px dotted #bdb7a4;}
+.item-description-menu {width:60%; font-size:12px; color:#acb2b4; margin-top:5px;}
+
+.menu-description {font-size:14px; margin-bottom:30px;}
+
+.menu-item-container {background:#ffffff; padding:10px 15px 5px 15px; margin-bottom:30px;}
+.content-padding-menu {padding-left:10px; }
+.menu-item-container img {margin-bottom:10px;}
+.menu-wine-spacing {padding-top:5px;}

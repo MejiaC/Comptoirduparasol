@@ -3,65 +3,70 @@
     @section('content')
 
         <section id="content">
-        	<div class="header-block">
-
-
-                <div class="cycle">
-                    <div id="s2">
-                        <div><div class="banner">Profiter de l'avantage d'une production de qualité made in france</span></div></div>  
-                      <div><div class="banner">D'une expérience acquise par confiance</span></div></div>
-                      <div><div class="banner">We invest our mind resources<span>to develop technology</span></div></div>
-               	    </div>
-                  <div id="nav"></div>
+          <div class="grid_24 align-c">
+             <h2 class="h2-2">Notre secteur d'activité:</h2>
+             <div class="grid_8 top-1">
+                <div class="box-2">
+                  <a href="{{URL::route('produits') }} title="produits"> {{HTML::image('images/terrasse.jpg') }} alt="" class="img-indent img-border"></a>
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
                 </div>
-            </div>
-        	<div class="container_24 top-3">
-            	<div class="grid_24 align-c">
-    				<h2 class="h2-2">Les articles</h2>
-                </div>   
-                <div class="grid_24">    
-                    <div class="box-5">
-                    	<div>
-                        	<img src="images/terrasse.jpg" alt="" class="img-border">
-                            <p class="text-1">Product #1</p>
-                            <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
-                            <a href="#" class="link-1">read more</a>
-                        </div>
-                        <div>
-                        	<img src="images/tente.jpg" alt="" class="img-border">
-                            <p class="text-1">Product #2</p>
-                            <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
-                            <a href="#" class="link-1">read more</a>
-                        </div>
-                        <div>
-                        	<img src="images/mesure.jpg" alt="" class="img-border">
-                            <p class="text-1">Product #3</p>
-                            <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
-                            <a href="#" class="link-1">read more</a>
-                        </div>
-                        <div>
-                        	<img src="images/eclairage.jpg" alt="" class="img-border">
-                            <p class="text-1">Product #4</p>
-                            <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
-                            <a href="#" class="link-1">read more</a>
-                        </div>
-                        <div>
-                        	<img src="images/marche.jpg" alt="" class="img-border">
-                            <p class="text-1">Product #5</p>
-                            <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
-                            <a href="#" class="link-1">read more</a>
-                        </div>
-                        <div class="last">
-                        	<img src="images/forains.jpg" alt="" class="img-border">
-                            <p class="text-1">Product #6</p>
-                            <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
-                            <a href="#" class="link-1">read more</a>
-                        </div>
-                    </div>
+                <div class="box-2 top-4 p2">
+                   <img src="images/forains.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
                 </div>
+             </div>
+             <div class="grid_8 top-1">
+                <div class="box-2">
+                   <img src="images/mesure.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
+                </div>
+                <div class="box-2 top-4">
+                   <img src="images/tente.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+          <div class="grid_24 align-c">
+             <div class="grid_8 top-1">
+                <div class="box-2">
+                   <img src="images/Location.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
+                </div>
+                <div class="box-2 top-4 p2">
+                   <img src="images/reception.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
+                </div>
+             </div>
+             <div class="grid_8 top-1">
+                <div class="box-2">
+                   <img src="images/marche.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
+                </div>
+                <div class="box-2 top-4">
+                   <img src="images/Eclairage.jpg" alt="" class="img-indent img-border">
+                   <div class="extra-wrap">
+                      <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
                 <div class="grid_24 align-c top-2">
     				<h2 class="h2-2">Les promotions à saisir</h2>
-                </div>  
+                </div>
                 <div class="grid_12 top-7">
     				<p class="text-2 align-r p1">Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec tristique. Sed sed felis arcu, vel vehicula augue. Maecenas faucibus sagittis cursusFusce tincidunt, tellus eget tristique cursus, orci mi iaculis sem, sit amet dictum velit.</p>
                 </div>
@@ -78,6 +83,6 @@
                 </div>
                 <div class="clear"></div>
             </div>
-        </section> 
+        </section>
 
 @stop

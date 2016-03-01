@@ -1,5 +1,6 @@
-* {
+li {
     margin: 0;
+    border-bottom: 1px dotted #bdb7a4;
     padding: 0;
 }
 
