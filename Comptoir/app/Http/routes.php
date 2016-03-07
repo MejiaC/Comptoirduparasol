@@ -42,13 +42,10 @@ Route::get('/produits', function () {
     return view('produits');
 });
 
-Route::post('/contact', ['as' => 'contact.post', function () {
-    return 'Hello World';
-}]);
+Route::get('contact', 
+	['as' => 'contact', 'uses' => 'AboutController@create']);
+Route::post('contact', 
+	['as' => 'contact.store', 'uses' => 'AboutController@store']);
 
 
 
-
-/* AUTRES */
-
-Route::controller('email', 'EmailController');

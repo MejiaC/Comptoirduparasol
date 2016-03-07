@@ -52,11 +52,10 @@ $civilite = [
 @extends('layouts.common')
 @section('content')
 <section id="content">
-    <div class="top-3">
-        <div class="grid_16 prefix_8 container_24">
-            <h2 class="h2-4">Demande de devis</h2>
+        <div class="grid_16">
+            <h2 class="h2-4">Formulaire de devis</h2>
 
-            <form action="{{ route('contact.post')}}" method="POST">
+            <form action="{{ route('contact')}}" method="POST">
               {{ csrf_field() }}
             <h3>Prestation</h3>
             <label class="grid_16">
@@ -155,6 +154,27 @@ $civilite = [
             </div>
             </form>
         </div>
-    </div>
+
+        <div class="grid_16">
+                        <div class="span6">
+
+                            <h4 class="pull-top">Nous <strong>joindre</strong></h4>
+                            <p>Si vous souhaitez nous contacter directement ou vous avez besoin d'informations complémentaires pour l'élaboration du devis, voici nos coordonnées.</p>
+
+                            <hr />
+
+                            <h4> La <strong>boutique</strong></h4>
+                            <ul class="unstyled">
+                                <li><i class="fa fa-map-marker"></i> <strong>Addresse:</strong> 13 Rue Jean Varenne 75018 Paris - FRANCE</li>
+                                <li><i class="fa fa-phone"></i> <strong>Phone:</strong> +33(0)1 42 54 81 17</li>
+                                <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">contact@comptoirduparasol.fr</a></li>
+                            </ul>
+
+                            <hr />
+
+                        </div>
+
+        </div>
+
 </section>
 @stop

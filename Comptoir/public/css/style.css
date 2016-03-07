@@ -36,10 +36,9 @@ h2.h2-4 { line-height:34px; display:block; border-bottom:#d2d9d8 2px solid; text
 h3 { font-size:16px; line-height:20px; color:#85a09d; font-weight:800;  font-family: 'Open Sans', sans-serif; text-transform:uppercase;}
 h3>span {display:block; margin-top:-2px;}
 
-h4{ font-size:10px; line-height:20px; font-weight:800;  font-family: 16px/1.4em Signika,sans-serif; text-transform:uppercase;}
 
 
-ul {margin:0; padding:8px 0px 0px 0px;list-style-image:none;}
+ul {margin:0; padding:8px 0px 0px 0px;list-style:none; font-size:15px;}
 ul.list-1 li {padding:0px 0 6px 12px; font-size:11px; line-height:18px; text-transform:uppercase; background:url(../images/marker-1.gif) 0 7px no-repeat;}
 ul.list-1 li a {color:#85a09d;}
 ul.list-1 li a:hover {text-decoration:underline;}
@@ -108,7 +107,7 @@ ul.menu li a:hover , ul.menu li.current a {color:#fff;}
 .slider-banner {position:absolute; right:0; top:0; display:inline-block; z-index:9999;}
 
 /*********************************content*************************************/
-#content {padding-bottom:24px; width:960px;}
+#content {padding-bottom:24px; width:81%px;}
 
 .img-border {border:#d2d9d8 1px solid;}
 
@@ -249,7 +248,7 @@ text-align:center;
 /*-- Ombrage CSS3 ------ FORMULAIRE CONTACT DEVIS --*/
 
 .container_24 form{
-    max-width: 500px;
+    width: 570px;
     padding: 10px 20px;
     margin: 10px auto;
     padding: 20px;
@@ -280,6 +279,28 @@ text-align:center;
 }
 
 
+
+.span6{
+	width:570px;
+	margin-top: 110px;
+	margin-left:110px;
+}
+
+h4 {
+	margin-top:35px;
+	color:#0071b5;
+	font-size: 1.9em;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 27px;
+	margin: 0 0 14px 0;
+
+ul.unstyled {
+	margin-left: 0;
+	list-style: none;
+}
+
+}
 
 /*-- COORDONNES SUR LA PAGE INDEX --*/
 
@@ -415,10 +436,99 @@ body #main ul.menu-items .lastcolumn {text-align:right;}
 body #main ul.menu-items {margin:0px; padding:8px 0px 0px 0px; list-style:none;}
 body #main ul.menu-items li {margin-bottom:10px; padding:0px 10px 10px 10px; border-bottom: 1px dotted #bdb7a4;}
 .item-description-menu {width:60%; font-size:12px; color:#acb2b4; margin-top:5px;}
-
+)
 .menu-description {font-size:14px; margin-bottom:30px;}
 
 .menu-item-container {background:#ffffff; padding:10px 15px 5px 15px; margin-bottom:30px;}
 .content-padding-menu {padding-left:10px; }
 .menu-item-container img {margin-bottom:10px;}
 .menu-wine-spacing {padding-top:5px;}
+
+
+
+
+/* ICI LE STYLE DES PRODUITS */
+
+
+.width-container-produits{
+	width:1140 px;
+	margin: 0 px;
+}
+
+.grid3column{
+	width:31.2%;
+	float: left;
+	margin-right: 11%;
+    border-radius: 25px;
+    border: 2px solid rgb(0, 113, 185);
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    margin-top:5%;
+}
+
+.aligncenter {
+	text-align:center;  
+	margin:0px auto 15px auto; 
+	display:block; 
+}
+
+p {
+	padding-top:0px; 
+	margin:0px;
+}
+p, ul, ol {
+	margin-bottom: 15px;
+}
+
+#content-produits {
+	margin:auto;
+	width:960px;
+
+}
+
+img{
+height: auto;
+max-width: 100%;
+}
+
+h6{
+	font-family: "Shadows Into Light", cursive;
+	font-size: 1.8em;
+	font-weight: normal;
+	text-align: center;
+}
+
+
+.row {
+	margin-left: -30px;
+}
+
+.span3{
+margin-top:80px;
+float: left;
+min-height: 1px;
+margin-left: 30px;
+width:270px;
+    text-align: center;
+}
+
+.plan{
+	background: #FFF;
+border: 1px solid #ddd;
+border-radius: 5px;
+color: #333;
+margin-bottom: 35px;
+margin-right: -31px;
+padding: 20px;
+position: relative;
+text-shadow: 0 1px rgba(255,255,255,.8);
+}
+
+h3{
+	border-radius: 2px 2px 0 0;
+font-size: 20px;
+font-weight: normal;
+margin: -20px -20px 50px -20px;
+padding: 20px;
+}
