@@ -1,4 +1,4 @@
-<?php 
+<?php
 $event_types = [
 "anniversaire" => "Anniversaire",
 "mariage" => "Mariage",
@@ -52,11 +52,12 @@ $civilite = [
 @extends('layouts.common')
 @section('content')
 <section id="content">
-    <div class="container_24 top-3">
-        <div class="grid_16 container_24">
+    <div class="top-3">
+        <div class="grid_16 prefix_8 container_24">
             <h2 class="h2-4">Demande de devis</h2>
 
-            <form action="" method="POST">
+            <form action="{{ route('contact.post')}}" method="POST">
+              {{ csrf_field() }}
             <h3>Prestation</h3>
             <label class="grid_16">
                 <span class="label grid_5">Type d'évènement</span>
@@ -102,12 +103,12 @@ $civilite = [
                     <li><input type="checkbox" name="accessoires[]" value=" {{ $value }}"> {{ $front }} </input></li>
                 @endforeach
                 </ul>
-            </label>   
+            </label>
 
             <label class="grid_16">
                 <span class="label grid_5">Indiquez toutes les informations complémentaires importantes pour que nous puissions traiter votre demande au mieux</span>
                 <textarea name="informations" rows="5" cols="70"></textarea>
-            </label>   
+            </label>
 
             <h3>Coordonnées</h3>
             <label class="grid_16">
@@ -142,7 +143,7 @@ $civilite = [
            <label class="grid_24">
                 <span class="label grid_5"> Téléphone secondaire</span>
                 <input type="text" name="telephone2"/>
-            </label> 
+            </label>
 
            <label class="grid_24">
                 <span class="label grid_5"> Horaires pour vous joindre</span>
@@ -155,5 +156,5 @@ $civilite = [
             </form>
         </div>
     </div>
-</section> 
+</section>
 @stop

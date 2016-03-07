@@ -38,12 +38,17 @@ Route::get('/services', function () {
     return view('services');
 });
 
+Route::get('/produits', function () {
+    return view('produits');
+});
+
+Route::post('/contact', ['as' => 'contact.post', function () {
+    return 'Hello World';
+}]);
+
 
 
 
 /* AUTRES */
 
 Route::controller('email', 'EmailController');
-
-
-

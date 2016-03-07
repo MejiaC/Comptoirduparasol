@@ -290,6 +290,10 @@ text-align:center;
 }
 .header-horaires {
     border-bottom: 3px solid #bdb7a4;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		width:50%;
 		}
 
 .center{
@@ -297,7 +301,7 @@ text-align:center;
 }
 body ul#open-hours {
 	list-style:none;
-	margin:0px;
+	margin:auto;
 	padding:0px;
 	width:16.5%;
 }
@@ -313,6 +317,11 @@ body ul#open-hours li .hours-date {
 }
 body ul#open-hours li, body #main ul.menu-items li, .type-post {
 	border-bottom:1px dotted #bdb7a4;
+}
+
+body ul#open-hours li .jour {
+	width:100px;
+	display:inline-block;
 }
 
 

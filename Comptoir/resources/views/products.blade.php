@@ -7,7 +7,7 @@
              <h2 class="h2-2">Notre secteur d'activité:</h2>
              <div class="grid_8 top-1">
                 <div class="box-2">
-                  <a href="{{URL::route('produits') }} title="produits"> {{HTML::image('images/terrasse.jpg') }} alt="" class="img-indent img-border"></a>
+                  <a href="/produits" title="produits"> <img src="images/terrasse.jpg" alt="" class="img-indent img-border"></a>
                    <div class="extra-wrap">
                       <p>Vivamus hendrerit mauris ut dui gravida ut viverra lectus tincidunt. Cras mattis tempor eros nec <br>tristique.</p>
                    </div>
