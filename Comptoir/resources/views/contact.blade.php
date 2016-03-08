@@ -1,50 +1,49 @@
 <?php
 $event_types = [
-"anniversaire" => "Anniversaire",
-"mariage" => "Mariage",
-"cocktail" => "Cocktail",
-"reunion_de_famille" => "Réunion de Famille",
-"communion_bapteme" => "Communion/Baptême",
-"seminaire_congres" => "Seminaire / Congrès",
-"autre" => "Autre",
+'anniversaire' => 'Anniversaire',
+'mariage' => 'Mariage',
+'cocktail' => 'Cocktail',
+'reunion_de_famille' => 'Réunion de Famille',
+'communion_bapteme' => 'Communion/Baptême',
+'seminaire_congres' => 'Seminaire / Congrès',
+'autre' => 'Autre',
 ];
 
 $rayon_km = [
-"20" => "20 Km",
-"30" => "30 Km",
-"50" => "50 Km",
-"80" => "80 Km",
+'20' => '20 Km',
+'30' => '30 Km',
+'50' => '50 Km',
+'80' => '80 Km',
 ];
 
-
 $accessoires = [
-"bloc_sanitaire" => "Bloc Sanitaire",
-"mange_debout" => "Mange-debout",
-"chaises" => "Chaises",
-"plante" => "Plante",
-"chapiteau" => "Chapiteau",
-"podium" => "Podium",
-"chauffage" => "Chauffage",
-"tables" => "Tables",
-"eclairage" => "Eclairage",
-"tente" => "Tente",
+'bloc_sanitaire' => 'Bloc Sanitaire',
+'mange_debout' => 'Mange-debout',
+'chaises' => 'Chaises',
+'plante' => 'Plante',
+'chapiteau' => 'Chapiteau',
+'podium' => 'Podium',
+'chauffage' => 'Chauffage',
+'tables' => 'Tables',
+'eclairage' => 'Eclairage',
+'tente' => 'Tente',
 ];
 
 $personnes = [
-"5_20" => "5 à 20",
-"21_50" => "21 à 50",
-"51_75" => "76 à 100",
-"76_100" => "101 à 150",
-"151_200" => "151 à 200",
-"plus_200" => "Plus de 200",
+'5_20' => '5 à 20',
+'21_50' => '21 à 50',
+'51_75' => '76 à 100',
+'76_100' => '101 à 150',
+'151_200' => '151 à 200',
+'plus_200' => 'Plus de 200',
 ];
 
 $civilite = [
-"particulier" => "Particulier",
-"societe" => "Société",
-"association" => "Association",
-"mairie" => "Mairie",
-"autre" => "Autre",
+'particulier' => 'Particulier',
+'societe' => 'Société',
+'association' => 'Association',
+'mairie' => 'Mairie',
+'autre' => 'Autre',
 ]
 ?>
 ;
@@ -55,16 +54,11 @@ $civilite = [
         <div class="grid_16">
             <h2 class="h2-4">Formulaire de devis</h2>
 
-            <form action="{{ route('contact')}}" method="POST">
-              {{ csrf_field() }}
+{!! Form::open(array('route' => 'contact')) !!}
             <h3>Prestation</h3>
             <label class="grid_16">
                 <span class="label grid_5">Type d'évènement</span>
-                <select name="event_types" required>
-                    @foreach($event_types as $value => $front)
-                    <option value="{{ $value }}"> {{ $front }} </option>
-                    @endforeach
-                </select>
+            {!!  Form::select('event_types', $event_types) !!}
             </label>
 
             <label class="grid_16">
@@ -74,32 +68,31 @@ $civilite = [
 
             <label class="grid_16">
                 <span class="label grid_5">Nombre de convives estimé</span>
-                <select name="personnes">
-                    @foreach($personnes as $value => $front)
-                    <option value="{{ $value }}"> {{ $front }} </option>
-                    @endforeach
-                </select>
+                {!!  Form::select('personnes', $personnes) !!}
+
             </label>
 
             <label class"grid_16">
                 <span class="label grid_5">Où doit se passer l'événement</span>
-                <input type="text" name="lieu" required/>
+              {!!  Form::text('lieu') !!}
             </label>
 
             <label class="grid_16">
                 <span class="label grid_5">Dans un rayon de</span>
-                <select name"rayon_km" required>
-                    @foreach($rayon_km as $value => $front)
-                        <option value="{{ $value }}"> {{ $front }} </option>
-                    @endforeach
-                </select>
+                {!!  Form::select('rayon_km', $rayon_km) !!}
+
             </label>
 
             <label class="grid_16">
                 <span class="label grid_5">Type de prestations recherchées pour du matériel</span>
                 <ul class="grid_8">
                 @foreach($accessoires as $value => $front)
-                    <li><input type="checkbox" name="accessoires[]" value=" {{ $value }}"> {{ $front }} </input></li>
+                    <li>
+                      <label>
+                      {!! Form::checkbox('accessoires[]', $value) !!}
+                      {{ $front }}
+                      </label>
+                    </li>
                 @endforeach
                 </ul>
             </label>
@@ -112,47 +105,43 @@ $civilite = [
             <h3>Coordonnées</h3>
             <label class="grid_16">
                 <span class="label grid_5"> Civilité</span>
-                <select name="civilite" required>
-                    @foreach($civilite as $value => $front)
-                        <option value="{{ $value }}"> {{ $front }} </option>
-                    @endforeach
-                </select>
+                {!!  Form::select('civilite', $civilite) !!}
             </label>
 
             <label class="grid_24">
                 <span class="label grid_5"> Prénom</span>
-                <input type="text" name="prenom" required/>
+                {!!  Form::text('prenom') !!}
             </label>
 
             <label class="grid_24">
                 <span class="label grid_5"> Nom</span>
-                <input type="text" name="nom" required/>
+                {!!  Form::text('nom') !!}
             </label>
 
             <label class="grid_24">
                 <span class="label grid_5"> Téléphone</span>
-                <input type="text" name="telephone" required/>
+                {!!  Form::text('telephone') !!}
             </label>
 
            <label class="grid_24">
                 <span class="label grid_5"> E-mail</span>
-                <input type="email" name="email" required/>
+                  {!!  Form::email('email') !!}
             </label>
 
            <label class="grid_24">
                 <span class="label grid_5"> Téléphone secondaire</span>
-                <input type="text" name="telephone2"/>
+                {!!  Form::text('telephone2') !!}
             </label>
 
            <label class="grid_24">
                 <span class="label grid_5"> Horaires pour vous joindre</span>
-                <input type="text" name="horaires"/>
+                {!!  Form::text('horaires') !!}
             </label>
 
             <div class="grid_24">
-                <input type="submit" value="Envoyer"/>
+            {!!    Form::submit('Envoyer') !!}
             </div>
-            </form>
+{!! Form::close() !!}
         </div>
 
         <div class="grid_16">
