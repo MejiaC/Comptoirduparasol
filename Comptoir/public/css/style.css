@@ -33,7 +33,6 @@ h2.h2-2 { line-height:34px; border-bottom:#d2d9d8 2px solid;  }
 h2.h2-3 { line-height:34px; color:#85a09d; text-transform:uppercase; display:block; border-bottom:#d2d9d8 2px solid; border-top:#d2d9d8 2px solid; text-align:left; }
 h2.h2-4 { line-height:34px; display:block; border-bottom:#d2d9d8 2px solid; text-align:center; }
 
-h3 { font-size:16px; line-height:20px; color:#85a09d; font-weight:800;  font-family: 'Open Sans', sans-serif; text-transform:uppercase;}
 h3>span {display:block; margin-top:-2px;}
 
 
@@ -387,7 +386,6 @@ body ul#open-hours li .jour {
 
 	body {
 		font-size: 13px;
-		line-height: 1.4;
 		color:#777777;
 	}
 
@@ -483,14 +481,11 @@ p, ul, ol {
 
 #content-produits {
 	margin:auto;
-	width:960px;
+	width:1200px;
 
 }
 
-img{
-height: auto;
-max-width: 100%;
-}
+
 
 h6{
 	font-family: "Shadows Into Light", cursive;
@@ -505,30 +500,102 @@ h6{
 }
 
 .span3{
-margin-top:80px;
-float: left;
-min-height: 1px;
-margin-left: 30px;
-width:270px;
-    text-align: center;
+	margin-top:80px;
+	float: left;
+	min-height: 1px;
+	margin-left: 30px;
+	width:270px;
+	margin:55px;
+	text-align: center;
 }
 
 .plan{
 	background: #FFF;
 border: 1px solid #ddd;
 border-radius: 5px;
-color: #333;
+color: #ffffff;
 margin-bottom: 35px;
 margin-right: -31px;
-padding: 20px;
 position: relative;
 text-shadow: 0 1px rgba(255,255,255,.8);
 }
 
 h3{
-	border-radius: 2px 2px 0 0;
-font-size: 20px;
-font-weight: normal;
-margin: -20px -20px 50px -20px;
-padding: 20px;
+	font-family: proxima-nova, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	margin: -20px -20px 50px -20px;
+	padding: 20px;
+}
+
+.title{
+	background-color:rgb(0, 113, 185);
+}
+
+
+.types-produits{
+	color: rgb(230,148,0);
+	border-radius: 5px;
+	margin-bottom: -16px;
+	position: relative;
+	text-shadow: 0 1px rgba(255,255,255,.8);
+	margin-top: -16px;
+}
+
+ul.produits{
+
+	line-height: 55px;
+
+}
+
+
+
+
+.grid3column-table{
+
+	width: 270px;
+	margin-left: 320px;
+	border: 1px dotted;
+	margin-top: 50px;
+}
+
+.grid_12{
+}
+
+.grid_24.type{
+	border-top-color: rgb(0,113,185);
+	border-radius: 5px;
+	margin-bottom: 40px;
+	position: relative;
+	text-shadow: 0 1px rgba(255,255,255,.8);
+	margin-top: 40px;
+	border: 1px solid rgb(0,113,185);
+	margin-left: 240px;
+
+}
+
+
+.span7{
+
+
+}
+
+img{
+max-height: 350px;
+max-width: 200px;
+margin-left: auto;
+}
+
+ul.type{
+	font-family: 'Droid Serif', serif;
+	font-style: italic;
+}
+
+
+div.slide-produit{
+	position: relative;
+	height: 330px;
+	width:430px;
+	overflow:hidden;
+	margin:0 auto;
 }
