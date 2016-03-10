@@ -1,4 +1,3 @@
-;
 
 @extends('layouts.common')
 @section('content')
@@ -118,47 +117,6 @@
         </div>
 </div>
 
-<div class="grid_24 type">
-        <div class="grid_12">
-            <div class="slide-produit">
-                <img class="img-produit" src="images/catproduit/tables/poteauxguidage.jpg"></img>
-            </div>
-        </div>
 
-        <div class="grid_12">
-                        <div class="span7">
-
-                            <h4 class="pull-top">Mange-debout en polyéthylène monobloc</h>
-                            <ul class="type">
-                                <li>Haute densité renforcé</li>
-                                <li>Piètrement pliant tube métallique</li>
-                                <li>Hauter de 110 CM</li>
-                                <li>Ø de 60 CM et 80 CM </li>
-                                <li>Poid de 7 KG</li>
-                            </ul>
-                        </div>
-        </div>
-</div>
-<div class="grid_24 type">
-        <div class="grid_12">
-            <div class="slide-produit">
-                <img class="img-produit" src="images/catproduit/tables/portemessage.jpg"></img>
-            </div>
-        </div>
-
-        <div class="grid_12">
-                        <div class="span7">
-
-                            <h4 class="pull-top">Porte-messages A3 simple-face, portrait ou paysage</h>
-                            <ul class="type">
-                                <li>Affiche en A3 ( 29,7 x L 42 CM)</li>
-                                <li>Hauteur totale 133 CM</li>
-                                <li>Sode lesté </li>
-                                <li>Piètement en aluminium anodisé naturel</li>
-                                <li>Poid de 7 KG</li>
-                            </ul>
-                        </div>
-        </div>
-</div>
 </section>
 @stop

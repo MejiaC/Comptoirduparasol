@@ -146,7 +146,7 @@ $civilite = [
             </label>
 
             <div class="grid_24">
-            {!!    Form::submit('Envoyer') !!}
+            {!!    Form::submit('Envoyer', '', array('class'=>'btn btn-primary')) !!}
             </div>
 {!! Form::close() !!}
         </div>
