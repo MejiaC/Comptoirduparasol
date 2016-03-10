@@ -292,7 +292,6 @@ h4 {
 	font-weight: 400;
 	letter-spacing: normal;
 	line-height: 27px;
-	margin: 0 0 14px 0;
 
 ul.unstyled {
 	margin-left: 0;
@@ -589,6 +588,8 @@ margin-left: auto;
 ul.type{
 	font-family: 'Droid Serif', serif;
 	font-style: italic;
+	line-height: -moz-block-height;
+
 }
 
 

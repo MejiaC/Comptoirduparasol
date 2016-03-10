@@ -44,6 +44,7 @@
   <div class="types-produits">
          <ul class="produits">
       <li><b>Tables rondes</b>
+      <li><b>Accessoires tables rondes</b>
         <li><b>Tables guéridon</b>
           <li><b>Tables mange debout</b>
           </ul>

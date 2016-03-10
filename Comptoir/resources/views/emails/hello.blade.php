@@ -1,26 +1,22 @@
-<!--This is a blade template that goes in email message to site administrator-->
-<?php
-//get the first name
-$first_name = Input::get('first_name');
-$last_name = Input::get ('last_name');
-$phone_number = Input::get('phone_number');
-$email = Input::get ('email');
-$subject = Input::get ('subject');
-$message = Input::get ('message');
-$date_time = date("F j, Y, g:i a");
-$userIpAddress = Request::getClientIp();
-?> 
- 
-<h1>We been contacted by.... </h1>
- 
+Bonjour</br>
+Vous avez une demande de devis émise sur le site de location www.comptoirduparasol.fr: 
+
 <p>
-First name: <?php echo ($first_name); ?> <br>
-Last name: <?php echo($last_name);?> <br>
-Phone number: <?php echo($phone_number);?><br>
-Email address: <?php echo ($email);?> <br>
-Subject: <?php echo ($subject); ?><br>
-Message: <?php echo ($message);?><br>
-Date: <?php echo($date_time);?><br>
-User IP address: <?php echo($userIpAddress);?><br>
- 
+Type d'évènement: {{ $event_type }}
+Date de l'évènement: {{ $date }}
+Nombre de convives estimé: {{ $personnes }}
+Lieu de l'évènement: {{ $lieu }}
+Dans un rayon de : {{ $rayon_km }}
+Matériel recherché pour la prestation : {{ $accessoires }}
+Civilité: {{ $civilite }}
+Nom: {{ $nom }}
+Prénom: {{ $prenom }}
+Téléphone: {{ $telephone }}
+Téléphone facultatif: {{ $telephone2 }}
+Horaires: {{ $horaires }}
+Informations complémentaires: {{ $informations }}
+
+</p>
+
+<p>
 </p>

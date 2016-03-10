@@ -74,5 +74,69 @@
                         </div>
         </div>
 </div>
+
+<div class="grid_24 type">
+        <div class="grid_12">
+            <div class="slide-produit">
+                <img class="img-produit" src="images/catproduit/tables/mangedebout2.jpg"></img>
+            </div>
+        </div>
+
+        <div class="grid_12">
+                        <div class="span7">
+
+                            <h4 class="pull-top">Mange-debout en polyéthylène monobloc</h>
+                            <ul class="type">
+                                <li>Haute densité renforcé</li>
+                                <li>Piètrement pliant tube métallique</li>
+                                <li>Hauter de 110 CM</li>
+                                <li>Ø de 60 CM et 80 CM </li>
+                                <li>Poid de 7 KG</li>
+                            </ul>
+                        </div>
+        </div>
+</div>
+
+
+
+
+        <div class="grid_12">
+                        <div class="span7">
+
+                            <h4 class="pull-top">Poteaux de guidage</h4>
+                            <ul class="type">
+                                <li>Poteaux réalisés en tube métalique</li>
+                                <li>Finition chromée d'une hauteur de 995 x Ø 50 MM </li>
+                                <li>Fixé sur un socle de Ø 310 MM et lesté de 5,5 KG pour une stabilité optimale</li>
+                                <li>Hauteur de 110 CM</li>
+                                <li>Ø de 60 CM </li>
+                                <li>Poid de 7 KG</li>
+                            </ul>
+                        </div>
+        </div>
+</div>
+
+<div class="grid_24 type">
+        <div class="grid_12">
+            <div class="slide-produit">
+                <img class="img-produit" src="images/catproduit/tables/mangedebout2.jpg"></img>
+            </div>
+        </div>
+
+        <div class="grid_12">
+                        <div class="span7">
+
+                            <h4 class="pull-top">Mange-debout en polyéthylène monobloc</h>
+                            <ul class="type">
+                                <li>Haute densité renforcé</li>
+                                <li>Piètrement pliant tube métallique</li>
+                                <li>Hauter de 110 CM</li>
+                                <li>Ø de 60 CM et 80 CM </li>
+                                <li>Poid de 7 KG</li>
+                            </ul>
+                        </div>
+        </div>
+</div>
+</sectio
 </section>
 @stop
