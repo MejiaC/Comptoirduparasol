@@ -42,6 +42,14 @@ Route::get('/produits', function () {
     return view('produits');
 });
 
+Route::get('/produits/tables', function () {
+    return view('produits.tables');
+});
+
+Route::get('/produits/chaises', function () {
+    return view('produits.chaises');
+});
+
 Route::get('contact',
 	['as' => 'contact', 'uses' => 'AboutController@create']);
 Route::post('contact',

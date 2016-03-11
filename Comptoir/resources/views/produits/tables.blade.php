@@ -5,7 +5,7 @@
 
 <div class="grid_24 type">
         <div class="grid_12">
-            <img class="img-produit" src="images/catproduit/tables/gueridon.jpg"></img>
+            <img class="img-produit" src="/images/catproduit/tables/gueridon.jpg"></img>
         </div>
 
         <div class="grid_12">
@@ -30,7 +30,7 @@
 <div class="grid_24 type">
         <div class="grid_12">
             <div class="slide-produit">
-                <img  class="img-produit" src="images/catproduit/tables/rectangulaire1.jpg"></img>
+                <img  class="img-produit" src="/images/catproduit/tables/rectangulaire1.jpg"></img>
             </div>
         </div>
 
@@ -54,7 +54,7 @@
 <div class="grid_24 type">
         <div class="grid_12">
             <div class="slide-produit">
-                <img class="img-produit" src="images/catproduit/tables/mangedebout.jpg"></img>
+                <img class="img-produit" src="/images/catproduit/tables/mangedebout.jpg"></img>
             </div>
         </div>
 
@@ -77,7 +77,7 @@
 <div class="grid_24 type">
         <div class="grid_12">
             <div class="slide-produit">
-                <img class="img-produit" src="images/catproduit/tables/mangedebout2.jpg"></img>
+                <img class="img-produit" src="/images/catproduit/tables/mangedebout2.jpg"></img>
             </div>
         </div>
 
@@ -99,7 +99,7 @@
 <div class="grid_24 type">
         <div class="grid_12">
             <div class="slide-produit">
-                <img class="img-produit" src="images/catproduit/tables/mangedebout2.jpg"></img>
+                <img class="img-produit" src="/images/catproduit/tables/mangedebout2.jpg"></img>
             </div>
         </div>
         <div class="grid_12">

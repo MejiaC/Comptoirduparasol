@@ -41,6 +41,7 @@ $jours = [
       <div class="coordonnees">
            <h3 class="header-horaires">Heures d'ouverture</h3>
               <ul id="open-hours">
+              
                 @foreach ($jours as $value => $front)
                   <li>
                     <div class="grid2column"><span>{{ $front["jour"] }}</span></div>
