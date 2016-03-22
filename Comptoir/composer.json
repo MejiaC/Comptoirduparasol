@@ -10,6 +10,7 @@
         "laravelcollective/html": "~5.0",
         "fbf/laravel-carousel": "dev-master"
 
+
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

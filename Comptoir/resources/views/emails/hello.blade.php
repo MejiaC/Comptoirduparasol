@@ -1,22 +1,29 @@
-Bonjour</br>
-Vous avez une demande de devis émise sur le site de location www.comptoirduparasol.fr: 
-
 <p>
-Type d'évènement: {{ $event_type }}
-Date de l'évènement: {{ $date }}
-Nombre de convives estimé: {{ $personnes }}
-Lieu de l'évènement: {{ $lieu }}
-Dans un rayon de : {{ $rayon_km }}
-Matériel recherché pour la prestation : {{ $accessoires }}
-Civilité: {{ $civilite }}
-Nom: {{ $nom }}
-Prénom: {{ $prenom }}
-Téléphone: {{ $telephone }}
-Téléphone facultatif: {{ $telephone2 }}
-Horaires: {{ $horaires }}
-Informations complémentaires: {{ $informations }}
 
-</p>
+    Type d'évènement :  {{ $event_types }} </br>
 
-<p>
+    Date de l'évènement : {{ $date }}
+
+    Nombre de personnes conviées :  {{ $personnes }} </br>
+
+    Lieu de l'évènement : {{ $lieu }}
+
+    Rayon Km :  {{ $rayon_km }} </br>
+
+    Accessoires nécessaires :  {{$accessoires}} </br>
+
+    Civilité : {{ $civilite }}
+
+    Nom : {{ $nom }}
+
+    Prénom : {{ $prenom }}
+
+    Adresse mail : {{ $email }}
+
+    Téléphone : {{ $telephone }}
+
+    Téléphone facultatif {{ $telephone2 }}
+
+    Horaires pouvant être joignable : {{ $horaires }}
+
 </p>

@@ -145,6 +145,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         'Collective\Html\HtmlServiceProvider',
+        'Creitive\Breadcrumbs\BreadcrumbsServiceProvider',
 
 
     ],
@@ -197,6 +198,7 @@ return [
         'View'      => Illuminate\Support\Facades\View::class,
         'Form'      => 'Collective\Html\FormFacade',
         'Html'      => 'Collective\Html\HtmlFacade',
+        'Breadcrumb'=> 'Creitive\Breadcrumbs\Facades\Breadcrumbs',
 
     ],
 

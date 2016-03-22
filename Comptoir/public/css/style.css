@@ -364,7 +364,45 @@ body ul#open-hours li .jour {
 
 /*-- Services --*/
 
-.grid2column {font-style:italic; font-size:16px;}
+.width-container-services{
+	width: 1140px;
+	margin: 0 auto;
+	padding: 42px 0px 40px 0px;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #777777;
+
+}
+
+.grid4column.services {
+	width: 31.2%;
+	float: left;
+	margin-right: 3%;
+
+}
+
+.grid4column.lastcolumn.services{
+	margin-right: 0% !important;
+	font-size: 13px;
+	line-height: 1.4;
+	color: #777777;
+}
+
+.menu-item-container-services{
+	z-index: 10;
+	position: relative;
+	background: transparent none repeat scroll 0% 0%;
+	border: medium none;
+	background: #ffffff;
+	padding: 10px 15px 5px 15px;
+	margin-bottom: 30px;
+	border-bottom:4px solid #88a5b1;
+}
+
+.grid4columnbig.services{
+	float:left;
+	margin-right:3%;
+}
 
 .li.services  {
 	border-bottom: 1px dotted #bdb7a4;
@@ -400,6 +438,7 @@ body ul#open-hours li .jour {
 .header-underline {
 	padding-bottom:10px;
 	margin-bottom:14px;
+	margin-top:20px;
 }
 .header-underline {
     border-bottom: 3px solid #bdb7a4;
@@ -446,6 +485,50 @@ body #main ul.menu-items li {margin-bottom:10px; padding:0px 10px 10px 10px; bor
 
 /* ICI LE STYLE DES PRODUITS */
 
+
+.crumbs2 {
+	display: block;
+	margin-left: 27px;
+	padding: 0;
+	padding-top: 10px;
+}
+.crumbs2 li { display: inline; }
+.crumbs2 li a,
+.crumbs2 li a:link,
+.crumbs2 li a:visited {
+	color: #666;
+	display: block;
+	float: left;
+	font-size: 12px;
+	padding: 7px 16px 7px 19px;
+	position: relative;
+	text-decoration: none;
+	border: 1px solid #d9d9d9;
+	border-right-width: 0px;
+}
+.crumbs2 li a  {
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(0.45, rgb(241,241,241)),color-stop(0.73, rgb(245,245,245)));
+	background-image: -moz-linear-gradient( center bottom, rgb(241,241,241) 45%, rgb(245,245,245) 73%);
+
+	/* For Internet Explorer 5.5 - 7 */
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#f1f1f1, endColorstr=#f5f5f5);
+
+	/* For Internet Explorer 8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f1f1f1, endColorstr=#f5f5f5)";
+}
+
+.crumbs2 li.first a {
+	border-top-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+.crumbs2 li.last a {
+	border-right-width: 1px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomright: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+}
+}
 
 .width-container-produits{
 	width:1140 px;

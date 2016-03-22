@@ -55,13 +55,8 @@ $civilite = [
             <h2 class="h2-4">Formulaire de devis</h2>
 
 
-            <ul>
-                @foreach($errors->all() as $error)
-                    <li> {{ $error }}</li>
-                @endforeach
-            </ul>
-
 {!! Form::open(array('route' => 'contact', 'class' => 'form')) !!}
+            {!!Form::token();!!}
             <h3>Prestation</h3>
             <label class="grid_16">
                 <span class="label grid_5">Type d'évènement</span>

@@ -56,7 +56,7 @@
     <div class="span3">
       <div class="plan">
         <div class="title">
-        <h3><a href="/produits/tables">Chaises</a><span></span></h3>
+        <h3><a href="/produits/chaises">Chaises</a><span></span></h3>
       </div>
       </div>
       <ul>
