@@ -11,7 +11,8 @@ body {
 
 }
 /***********************************************************************/
-a {text-decoration:none; cursor:pointer;text-decoration:none; }
+/***********************************************************************/
+a {text-decoration:none; cursor:pointer;text-decoration:none; color:white; }
 a:hover {text-decoration:none;}
 
 .button {}
@@ -31,7 +32,7 @@ h2 { font-size:36px; line-height:45px; color:rgb(35, 97, 146); font-weight:norma
 h2.h2-1 { line-height:34px; color:#85a09d; text-transform:uppercase; display:block; border-bottom:#d2d9d8 2px solid; border-top:#d2d9d8 2px solid; text-align:center; }
 h2.h2-2 { line-height:34px; border-bottom:#d2d9d8 2px solid;  }
 h2.h2-3 { line-height:34px; color:#85a09d; text-transform:uppercase; display:block; border-bottom:#d2d9d8 2px solid; border-top:#d2d9d8 2px solid; text-align:left; }
-h2.h2-4 { line-height:34px; display:block; border-bottom:#d2d9d8 2px solid; text-align:center; }
+h2.h2-4 { line-height:34px; display:block; border-bottom:#d2d9d8 2px solid; text-align:center; font-family: "Shadows Into Light", cursive;}
 
 h3>span {display:block; margin-top:-2px;}
 
@@ -150,7 +151,7 @@ ul.menu li a:hover , ul.menu li.current a {color:#fff;}
 }
 
 /****************************footer************************/
-footer {width:950px; overflow:hidden; margin:0 auto; padding:12px 0px 40px 0; border-top:#d2d9d8 2px solid; text-align:center; color:#a7a7a7; }
+footer {width:100%; overflow:hidden; margin:0 auto; padding:12px 0px 40px 0; border-top:#d2d9d8 2px solid; text-align:center; color:#a7a7a7; }
 footer p {overflow:hidden;}
 footer strong {font-size:24px; line-height:30px; color:#b4b4b4; font-weight:normal; font-family: 'Passion One', cursive; display:inline-block; text-transform:uppercase; }
 footer span {display:inline-block;margin:7px 0 0 5px; }
@@ -246,6 +247,13 @@ text-align:center;
 
 /*-- Ombrage CSS3 ------ FORMULAIRE CONTACT DEVIS --*/
 
+.grid_16-contact{
+	margin-left:16px;
+}
+#content-contact{
+	padding-bottom:24px;
+	margin-left:200px;
+}
 .container_24 form{
     width: 570px;
     padding: 10px 20px;
@@ -287,11 +295,12 @@ text-align:center;
 
 h4 {
 	margin-top:35px;
-	color:#0071b5;
+	color:#2781bb;
 	font-size: 1.9em;
 	font-weight: 400;
 	letter-spacing: normal;
 	line-height: 27px;
+	font-family: "Shadows Into Light", cursive;
 
 ul.unstyled {
 	margin-left: 0;
@@ -381,11 +390,11 @@ body ul#open-hours li .jour {
 
 }
 
-.grid4column.lastcolumn.services{
+.grid4column.lastcolumn-services{
 	margin-right: 0% !important;
 	font-size: 13px;
 	line-height: 1.4;
-	color: #777777;
+	color: #0071b5;
 }
 
 .menu-item-container-services{
@@ -393,13 +402,13 @@ body ul#open-hours li .jour {
 	position: relative;
 	background: transparent none repeat scroll 0% 0%;
 	border: medium none;
-	background: #ffffff;
+	background: #f5f3f3;
 	padding: 10px 15px 5px 15px;
 	margin-bottom: 30px;
 	border-bottom:4px solid #88a5b1;
 }
 
-.grid4columnbig.services{
+.grid4columnbig-services{
 	float:left;
 	margin-right:3%;
 }
@@ -456,7 +465,7 @@ body #main ul.menu-items li {
 
 body .lastcolumn {
 	margin-right:0% !important;
-	text-align: right;
+
 }
 
 body ul#open-hours li, body #main ul.menu-items li, .type-post {
@@ -486,11 +495,13 @@ body #main ul.menu-items li {margin-bottom:10px; padding:0px 10px 10px 10px; bor
 /* ICI LE STYLE DES PRODUITS */
 
 
+
 .crumbs2 {
 	display: block;
 	margin-left: 27px;
 	padding: 0;
 	padding-top: 10px;
+	float:left;
 }
 .crumbs2 li { display: inline; }
 .crumbs2 li a,
@@ -532,7 +543,7 @@ body #main ul.menu-items li {margin-bottom:10px; padding:0px 10px 10px 10px; bor
 
 .width-container-produits{
 	width:1140 px;
-	margin: 0 px;
+	margin-top: 40 px;
 }
 
 .grid3column{
@@ -599,7 +610,6 @@ color: #ffffff;
 margin-bottom: 35px;
 margin-right: -31px;
 position: relative;
-text-shadow: 0 1px rgba(255,255,255,.8);
 }
 
 h3{
@@ -616,18 +626,18 @@ h3{
 
 
 .types-produits{
-	color: rgb(230,148,0);
+	color:  #0071b5;
 	border-radius: 5px;
 	margin-bottom: -16px;
 	position: relative;
 	text-shadow: 0 1px rgba(255,255,255,.8);
-	margin-top: -16px;
+	margin-top: -50px;
 }
 
 ul.produits{
 
 	line-height: 55px;
-
+	background: #f5f3f3;
 }
 
 
@@ -664,7 +674,7 @@ ul.produits{
 
 .img-produit{
 max-height: 100%;
-max-width: 200px;
+max-width: 70%;
 margin-left: auto;
 }
 
@@ -682,4 +692,23 @@ div.slide-produit{
 	width:430px;
 	overflow:hidden;
 	margin:0 auto;
+}
+
+
+
+/* PAGE DES REALISATIONS */
+
+.fa {
+	font-size: 12em;
+}
+
+.construction{
+	text-align:center;
+	margin-top:35px;
+	color:#2781bb;
+	font-size: 1.9em;
+	font-weight: 400;
+	letter-spacing: normal;
+	line-height: 27px;
+	font-family: "Shadows Into Light", cursive;
 }

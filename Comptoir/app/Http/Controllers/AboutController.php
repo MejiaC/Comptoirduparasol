@@ -13,6 +13,8 @@ class AboutController extends Controller {
 {
 
     \Mail::send('emails.hello', $request->all(),
+     $request->get('personnes'),
+
 
 
 

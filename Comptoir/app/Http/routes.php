@@ -30,8 +30,8 @@ Route::get('/contact', function () {
 	return view('contact');
 });
 
-Route::get('/about', function () {
-	return view('about');
+Route::get('/realisations', function () {
+	return view('realisations');
 });
 
 Route::get('/services', function () {
@@ -48,6 +48,25 @@ Route::get('/produits/tables', function () {
 
 Route::get('/produits/chaises', function () {
     return view('produits.chaises');
+});
+
+Route::get('/produits/support', function () {
+	return view('produits.support');
+});
+Route::get('/produits/abri', function () {
+	return view('produits.abri');
+});
+
+Route::get('/produits/appareil', function () {
+	return view('produits.appareil');
+});
+
+Route::get('/produits/accessoires', function () {
+	return view('produits.accessoires');
+});
+
+Route::get('/produits/chauffage', function () {
+	return view('produits.chauffage');
 });
 
 Route::get('contact',

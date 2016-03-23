@@ -12,11 +12,13 @@
 
     Accessoires nécessaires :  {{$accessoires}} </br>
 
+    Informations complémentaires : {{ $informations }}
+
     Civilité : {{ $civilite }}
 
     Nom : {{ $nom }}
 
-    Prénom : {{ $prenom }}
+    Prénom : {{ $name }}
 
     Adresse mail : {{ $email }}
 

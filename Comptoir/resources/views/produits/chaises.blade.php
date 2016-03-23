@@ -5,7 +5,7 @@
 
     <div id="breadcrumb2">
         <ul class="crumbs2">
-            <li class="first"><a href="/products">Retourner à page des produits</a></li>
+            <li class="first"><a href="/produits">Retourner à la page des produits</a></li>
 
             <li class="last">Voici tous nos produits associés aux tables</li>
         </ul>
@@ -110,6 +110,49 @@
                        </div>
         </div>
 </div>
+
+    <div class="grid_24 type">
+        <div class="grid_12">
+            <img class="img-produit" src="/images/catproduit/chaises/chaisencoque.jpg"></img>
+        </div>
+
+        <div class="grid_12">
+            <div class="span7">
+
+                <h4 class="pull-top">Chaise coque empilable avec pieetements chromes ou en epoxy noir</h4>
+                <ul class="type">
+                    <li>Tampons anti-bruit non tachant</li>
+                    <li>La Coque visée est fabriquée en polyprolene</li>
+                    <li>Traitement antistatique et anti ultra violet</li>
+                    <li>Classement au feu M2</li>
+                    <li>Largeur assise de 44 CM</li>
+                    <li>Hauteur assise de 45 CM</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="grid_24 type">
+        <div class="grid_12">
+            <img class="img-produit" src="/images/catproduit/chaises/chaisenapoleon33.jpg"></img>
+        </div>
+
+        <div class="grid_12">
+            <div class="span7">
+
+                <h4 class="pull-top">Chaise Napoléon III empilable</h4>
+                <ul class="type">
+                    <li>Fabrication européenne</li>
+                    <li>Galette amovible</li>
+                    <li>Hauteur de 88 CM</li>
+                    <li>Largeur de 42 CM</li>
+                    <li>Profondeur de 42 CM</li>
+                    <li>Poids de 4 KG</li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
 </section>
 @stop

@@ -50,14 +50,13 @@ $civilite = [
 
 @extends('layouts.common')
 @section('content')
-<section id="content">
+<section id="content-contact">
         <div class="grid_16">
             <h2 class="h2-4">Formulaire de devis</h2>
 
 
 {!! Form::open(array('route' => 'contact', 'class' => 'form')) !!}
             {!!Form::token();!!}
-            <h3>Prestation</h3>
             <label class="grid_16">
                 <span class="label grid_5">Type d'évènement</span>
             {!!  Form::select('event_types', $event_types) !!}
@@ -167,6 +166,6 @@ $civilite = [
                         </div>
 
         </div>
-
+<div="clearfix"></div>
 </section>
 @stop
