@@ -9,6 +9,7 @@
 <ul>
 
     <li>Type d'évènement: <strong> {{ $event_types }}</strong></li>
+
     <li>Date de l'évènement :<strong> {{ $date }} </strong></li>
     </br>
 
@@ -20,7 +21,7 @@
 
     <li>Rayon Km : <strong> {{ $rayon_km }}</strong></li>
     </br>
-
+    <li>Les accessoires nécessaires : <strong> {{ $accessoires }}</strong></li>
     </br>
 
     <li>Particularité d'accès à l'emplacement de l'évènement :<strong> {{ $emplacement }}</strong></li>
