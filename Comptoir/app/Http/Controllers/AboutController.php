@@ -13,15 +13,13 @@ class AboutController extends Controller {
 {
 
     \Mail::send('emails.hello', $request->all(),
-     $request->get('personnes'),
-
 
 
 
         function($message)
     {
         $message->from('wj@wjgilmore.com');
-        $message->to('comptoirudparasol@gmail.com', 'Admin')->subject('TODOParrot Feedback');
+        $message->to('comptoirudparasol@gmail.com', 'Admin')->subject('Demande de devis en ligne');
     });
 
   return \Redirect::route('contact')->with('message', 'Thanks for contacting us!');

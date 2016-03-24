@@ -17,16 +17,18 @@ $rayon_km = [
 ];
 
 $accessoires = [
-'bloc_sanitaire' => 'Bloc Sanitaire',
-'mange_debout' => 'Mange-debout',
-'chaises' => 'Chaises',
-'plante' => 'Plante',
-'chapiteau' => 'Chapiteau',
-'podium' => 'Podium',
-'chauffage' => 'Chauffage',
-'tables' => 'Tables',
-'eclairage' => 'Eclairage',
-'tente' => 'Tente',
+        'tente' => 'Tente',
+        'parasol' => 'Parasol',
+        'mange_debout' => 'Mange-debout',
+        'chaises' => 'Chaises',
+        'tabouret' => 'Tabourets',
+        'fauteuil' => 'Fauteuil',
+        'chapiteau' => 'Chapiteau',
+        'podium' => 'Podium',
+        'chauffage' => 'Chauffage',
+        'eclairage' => 'Eclairage',
+        'plante' => 'Plante',
+        'bloc_sanitaire' => 'Bloc Sanitaire',
 ];
 
 $personnes = [
@@ -44,9 +46,9 @@ $civilite = [
 'association' => 'Association',
 'mairie' => 'Mairie',
 'autre' => 'Autre',
-]
+];
 ?>
-;
+
 
 @extends('layouts.common')
 @section('content')
@@ -54,9 +56,15 @@ $civilite = [
         <div class="grid_16">
             <h2 class="h2-4">Formulaire de devis</h2>
 
+<ul>
+        @foreach($errors->all() as $error)
+                <li> {{ $error }}</li>
+            @endforeach
+    </ul>
+
 
 {!! Form::open(array('route' => 'contact', 'class' => 'form')) !!}
-            {!!Form::token();!!}
+            {!! Form::token(); !!}
             <label class="grid_16">
                 <span class="label grid_5">Type d'évènement</span>
             {!!  Form::select('event_types', $event_types) !!}
@@ -79,9 +87,13 @@ $civilite = [
             </label>
 
             <label class="grid_16">
+            <span class="label grid_5">Particularité d'accès à l'emplacement de l'évènement</span>
+            {!!  Form::textarea('emplacement') !!}
+            </label>
+
+            <label class="grid_16">
                 <span class="label grid_5">Dans un rayon de</span>
                 {!!  Form::select('rayon_km', $rayon_km) !!}
-
             </label>
 
             <label class="grid_16">

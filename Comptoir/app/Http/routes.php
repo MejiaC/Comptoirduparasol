@@ -50,8 +50,8 @@ Route::get('/produits/chaises', function () {
     return view('produits.chaises');
 });
 
-Route::get('/produits/support', function () {
-	return view('produits.support');
+Route::get('/produits/scene', function () {
+	return view('produits.scene');
 });
 Route::get('/produits/abri', function () {
 	return view('produits.abri');
@@ -61,13 +61,18 @@ Route::get('/produits/appareil', function () {
 	return view('produits.appareil');
 });
 
-Route::get('/produits/accessoires', function () {
-	return view('produits.accessoires');
+Route::get('/produits/lestages', function () {
+	return view('produits.lestages');
 });
 
 Route::get('/produits/chauffage', function () {
 	return view('produits.chauffage');
 });
+
+Route::get('/produits/protection', function () {
+	return view('produits.protection');
+});
+
 
 Route::get('contact',
 	['as' => 'contact', 'uses' => 'AboutController@create']);

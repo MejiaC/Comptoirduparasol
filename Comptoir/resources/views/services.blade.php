@@ -71,8 +71,8 @@
                 </div>
                 <div class="grid4columnbig lastcolumn services">
                     <br>
-                    <h4 class="pull-top">Service6</h4>
-                    <p>Description</p>
+                    <h4 class="pull-top">Récupération de matériel en boutique</h4>
+                    <p>Vous avez la possibilité de venir récupérer en boutique votre commande</p>
 
                 </div>
                 <div class="clearfix"></div>

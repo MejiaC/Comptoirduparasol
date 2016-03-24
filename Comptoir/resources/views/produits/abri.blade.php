@@ -7,7 +7,6 @@
             <ul class="crumbs2">
                 <li class="first"><a href="/produits">Retourner à la page des produits</a></li>
 
-                <li>Voici tous nos produits associés</li>
             </ul>
         </div>
 

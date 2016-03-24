@@ -2,11 +2,9 @@
 @extends('layouts.common')
 @section('content')
 <section id="content-type">
-    <div id="breadcrumb2">
+    <div id="breadcrumbs2">
         <ul class="crumbs2">
             <li class="first"><a href="/produits">Retourner à la page des produits</a></li>
-
-            <li class="last">Voici tous nos produits associés aux tables</li>
         </ul>
     </div>
 <div class="grid_24 type">

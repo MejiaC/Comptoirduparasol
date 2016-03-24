@@ -55,9 +55,9 @@ return [
     */
 
     'to' => [
-     'adress' => 'comptoirudparasol@gmail.com'
-      'name' => 'Comptoir du parasol'
-     ]
+     'address' => 'comptoirudparasol@gmail.com',
+      'name' => 'Comptoir du parasol',
+     ],
 
     /*
     |--------------------------------------------------------------------------

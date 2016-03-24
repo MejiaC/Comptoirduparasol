@@ -3,8 +3,6 @@
     <section id="content-produits">
         <div class="width-container-produits">
             <h2 class="h2-4">Nos produits par catégorie</h2>
-            <div class="row">
-                <div class="pricing-table">
                     <div class="span3">
                         <div class="plan">
                             <div class="title">
@@ -19,25 +17,34 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pricing-table">
                     <div class="span3">
                         <div class="plan">
                             <div class="title">
-                                <h3><a href="/produits/accessoires">Accessoires</a><span></span></h3>
+                                <h3><a href="/produits/lestages">Lestages</a><span></span></h3>
                             </div>
                             <div class="types-produits">
                                 <ul class="produits">
                                     <li><b>Lestages en fonte</b>
                                     <li><b>Lestages en béton</b>
-                                    <li><b>Poteaux de guidage</b></li>
-                                    <li><b>Porte messages</b></li>
+
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pricing-table">
+                    <div class="span3">
+                        <div class="plan">
+                            <div class="title">
+                                <h3><a href="/produits/protection" >Protection</a><span></span></h3>
+                            </div>
+                            <div class="types-produits">
+                                <ul class="produits">
+                                    <li><b>Poteaux de guidage</b>
+                                    <li><b>Porte messages</b>
+                                    <li><b>Barrière de sécurité</b>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                     <div class="span3">
                         <div class="plan">
                             <div class="title">
@@ -45,16 +52,15 @@
                             </div>
                             <div class="types-produits">
                                 <ul class="produits">
-                                    <li><b>Tables rondes</b>
-                                    <li><b>Accessoires tables rondes</b>
-                                    <li><b>Tables guéridon</b>
-                                    <li><b>Tables mange debout</b>
+                                    <li><b>Tables rondes</b></li>
+                                    <li><b>Tables rectangulaires</b></li>
+                                    <li><b>Accessoires tables rondes</b></li>
+                                    <li><b>Tables guéridon</b></li>
+                                    <li><b>Tables mange debout</b></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="pricing-table">
                     <div class="span3">
                         <div class="plan">
                             <div class="title">
@@ -70,11 +76,8 @@
                                 </ul>
                             </div>
                         </div>
-                        <ul>
                     </div>
-                </div>
-            </div>
-            <div class="pricing-table">
+
                 <div class="span3">
                     <div class="plan">
                         <div class="title">
@@ -89,25 +92,19 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="pricing-table">
                 <div class="span3">
                     <div class="plan">
                         <div class="title">
-                            <h3><span><a href="/produits/support">Support</a></span></h3>
+                            <h3><span><a href="/produits/support">Scène</a></span></h3>
                         </div>
                         <div class="types-produits">
                             <ul class="produits">
                                 <li><b>Podiums</b>
                                 <li><b>Planché</b>
-                                <li><b>Tables mange debout</b>
                             </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-            <h3><strong>
-
         </div>
     </section>
 @stop
