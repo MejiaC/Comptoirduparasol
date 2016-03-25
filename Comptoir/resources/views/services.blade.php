@@ -80,19 +80,7 @@
     </div>
 
 
-    <div class="grid4column lastcolumn services">
-        <div class="menu-item-container-services">
-                <div class="grid4column services">
-                </div>
-                <div class="grid4columnbig lastcolumn services">
-                    <br>
-                    <h4 class="pull-top">Service 7</h4>
-                    <p>Description</p>
 
-                </div>
-                <div class="clearfix"></div>
-        </div>
-    </div>
 
     <div class="clearfix"></div>
 

@@ -18,8 +18,8 @@ class AboutController extends Controller {
 
         function($message)
     {
-        $message->from('wj@wjgilmore.com');
-        $message->to('comptoirudparasol@gmail.com', 'Admin')->subject('Demande de devis en ligne');
+        $message->from('commercial@comptoirduparasol.fr');
+        $message->to('commercial@comptoirduparasol.fr', 'Admin')->subject('Demande de devis en ligne');
     });
 
   return \Redirect::route('contact')->with('message', 'Thanks for contacting us!');

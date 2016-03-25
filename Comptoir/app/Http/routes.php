@@ -73,6 +73,10 @@ Route::get('/produits/protection', function () {
 	return view('produits.protection');
 });
 
+Route::get('/produits/habillage', function () {
+	return view('produits.habillage');
+});
+
 
 Route::get('contact',
 	['as' => 'contact', 'uses' => 'AboutController@create']);

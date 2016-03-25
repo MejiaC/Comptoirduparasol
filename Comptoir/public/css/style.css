@@ -12,7 +12,7 @@ body {
 }
 /***********************************************************************/
 /***********************************************************************/
-a {text-decoration:none; cursor:pointer;text-decoration:none; color:white; }
+a {text-decoration:none; cursor:pointer;text-decoration:none; }
 a:hover {text-decoration:none;}
 
 .button {}
@@ -573,7 +573,7 @@ p, ul, ol {
 
 #content-produits {
 	margin:auto;
-	width:1200px;
+	width:100%;
 
 }
 
@@ -672,14 +672,14 @@ ul.produits{
 }
 
 .img-produit{
-max-height: 100%;
-max-width: 70%;
+max-height: 84%;
+max-width: 80%;
 margin-left: auto;
+margin-top: 50px;
 }
 
 ul.type{
 	font-family: 'Droid Serif', serif;
-	font-style: italic;
 	line-height: -moz-block-height;
 
 }

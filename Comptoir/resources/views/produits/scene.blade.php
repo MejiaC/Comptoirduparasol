@@ -35,7 +35,28 @@
                 </div>
             </div>
         </div>
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <img class="img-produit" src="/images/catproduit/support/plancher.jpg"></img>
+            </div>
 
+            <div class="grid_12">
+                <div class="span7">
+
+                    <h4 class="pull-top">Plancher amovible pour réception</h4>
+                    <ul class="type">
+                        <li> Finitions en aluminium</li>
+                        <li>Service de montage et assemblage avec une pose directe au sol, sur armatures ou sur ossatures</li>
+                        <li>Fabrication européenne de qualité fiable et d'une solidité pour un usage itensif</li>
+                        <li>Système modulaire largeur/longueur</li>
+                        <li>Nous contacter à travers le <a href="/contact"><strong>formulaire de contact</strong></a> pour un devis précis</li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
 
 
 

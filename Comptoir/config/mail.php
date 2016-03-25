@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => 'smtp.gmail.com',
+    'host' => 'smtp.comptoirduparasol.fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -55,7 +55,7 @@ return [
     */
 
     'to' => [
-     'address' => 'comptoirudparasol@gmail.com',
+     'address' => 'commercial@comptoirduparasol.fr',
       'name' => 'Comptoir du parasol',
      ],
 
@@ -83,7 +83,7 @@ return [
     |
     */
 
-    'username' => 'comptoirudparasol@gmail.com',
+    'username' => 'commercial@comptoirduparasol.fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -96,7 +96,7 @@ return [
     |
     */
 
-    'password' => 'comptoir',
+    'password' => 'comptoirbenmig',
 
     /*
     |--------------------------------------------------------------------------

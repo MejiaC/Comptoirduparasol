@@ -66,6 +66,27 @@
             </div>
         </div>
 
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <div class="slide-produit">
+                    <img class="img-produit" src="/images/catproduit/protection/barriere2.jpg"></img>
+                </div>
+            </div>
+            <div class="grid_12">
+                <div class="span7">
+                    <h4 class="pull-top">Barrière de sécurité MOVIT</h4>
+                    <ul class="type">
+                        <li>Longueur de 2M, hauteur de 1M</li>
+                        <li>Possibilité d'inscription de votre logo sur le produit</li>
+                        <li>Permet l'identité visuel du propriétaire sur une surface de 30 x 30 CM</li>
+                        <li>Construite en une seule pièce éliminant tout assemblage</li>
+                        <li>Sa construction en polyprolyène font d'elle une barrière très légère avec une stabilité assuré grçace à ses nervures de 88 MM à l'intérieur</li>
+                        <li>Poids de 12,5 KG</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
 
    </section>
 
