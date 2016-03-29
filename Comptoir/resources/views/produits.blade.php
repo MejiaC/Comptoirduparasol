@@ -93,7 +93,7 @@
         <div class="span3">
             <div class="plan">
                 <div class="title">
-                    <h3><span><a href="/produits/scene">Scène</a></span></h3>
+                    <h3><span><a href="/produits/scened">Scène</a></span></h3>
                 </div>
                 <div class="types-produits">
                     <ul class="produits">

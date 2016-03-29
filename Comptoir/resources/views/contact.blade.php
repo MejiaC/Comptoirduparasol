@@ -96,7 +96,19 @@ $civilite = [
                 {!!  Form::select('rayon_km', $rayon_km) !!}
             </label>
 
-
+            <label class="grid_16">
+                <span class="label grid_5">Type de prestations recherchées pour du matériel</span>
+                <ul class="grid_8">
+                    @foreach($accessoires as $value => $front)
+                        <li>
+                            <label>
+                                {!! Form::checkbox('accessoires[]', $value) !!}
+                                {{ $front }}
+                            </label>
+                        </li>
+                    @endforeach
+                </ul>
+            </label>
 
             <label class="grid_16">
                 <span class="label grid_5">Indiquez toutes les informations complémentaires importantes pour que nous puissions traiter votre demande au mieux</span>
@@ -158,7 +170,7 @@ $civilite = [
                                 <li><i class="fa fa-map-marker"></i> <strong>Addresse:</strong> 13 Rue Jean Varenne 75018 Paris - FRANCE</li>
                                 <li><i class="fa fa-phone"></i> <strong>Phone:</strong> +33(0)1 42 54 81 17</li>
                                 <li><i class="fa fa-phone"></i> <strong>Fax:</strong> +33(0)1 42 54 81 11</li>
-                                <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">contact-location@comptoirduparasol.fr</a></li>
+                                <li><i class="fa fa-envelope"></i> <strong>Email:</strong> <a href="mailto:mail@example.com">contact@comptoirduparasol.fr</a></li>
                             </ul>
 
                             <hr />

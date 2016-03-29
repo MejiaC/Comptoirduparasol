@@ -21,7 +21,7 @@
 
     <li>Rayon Km : <strong> {{ $rayon_km }}</strong></li>
     </br>
-    <li>Les accessoires nécessaires : <strong</strong></li>
+    <li>Les accessoires nécessaires : <strong> {{ print("<pre>".print_r($accessoires,true)."</pre>")  }}</strong></li>
     </br>
 
     <li>Particularité d'accès à l'emplacement de l'évènement :<strong> {{ $emplacement }}</strong></li>
