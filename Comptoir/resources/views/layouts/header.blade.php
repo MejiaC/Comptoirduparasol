@@ -10,5 +10,5 @@
                 <li><a href="{{ url('produits') }}">Produits</a></li>
                 <li><a href="{{ url('contact') }}">Contact</a></li>
             </ul>
-        </nav>
+   </nav>
 </header> 

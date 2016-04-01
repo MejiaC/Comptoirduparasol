@@ -88,7 +88,7 @@
         <div class="grid_12">
                         <div class="span7">
 
-                            <h4 class="pull-top">Mange-debout en polyéthylène monobloc</h>
+                            <h4 class="pull-top">Mange-debout en polyéthylène monobloc</h4>
                             <ul class="type">
                                 <li>Haute densité renforcé</li>
                                 <li>Piètrement pliant tube métallique</li>

@@ -112,7 +112,7 @@
 
     <div class="grid_24 type">
         <div class="grid_12">
-            <img class="img-produit" src="/images/catproduit/chaises/chaisencoque.jpg"></img>
+            <img class="img-produit" src="/images/catproduit/chaises/chaisecoque.jpg"></img>
         </div>
 
         <div class="grid_12">

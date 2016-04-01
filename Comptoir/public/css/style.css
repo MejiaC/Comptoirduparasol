@@ -406,6 +406,7 @@ body ul#open-hours li .jour {
 	padding: 10px 15px 5px 15px;
 	margin-bottom: 30px;
 	border-bottom:4px solid #88a5b1;
+	height:184px;
 }
 
 .grid4columnbig-services{
@@ -596,8 +597,8 @@ h6{
 	float: left;
 	min-height: 1px;
 	margin-left: 30px;
-	width:270px;
-	margin:55px;
+	width:208px;
+	margin:50px;
 	text-align: center;
 }
 
@@ -672,10 +673,10 @@ ul.produits{
 }
 
 .img-produit{
-max-height: 84%;
+max-height: 270px;
 max-width: 80%;
 margin-left: auto;
-margin-top: 50px;
+margin-top: 10px;
 }
 
 ul.type{
@@ -687,7 +688,7 @@ ul.type{
 
 div.slide-produit{
 	position: relative;
-	height: 330px;
+	height: 285px;
 	width:430px;
 	overflow:hidden;
 	margin:0 auto;
