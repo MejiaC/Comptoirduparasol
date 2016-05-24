@@ -86,7 +86,7 @@
                     <h4 class="pull-top">Housse pour table ronde</h4>
                     <ul class="type">
                         <li>Housse extensible pour table ronde</li>
-                        <li>Deux dimensions possbiles: une pour table d'un diamètre de 150 CM et 180 CM</li>
+                        <li>Deux dimensions possibles: une pour table d'un diamètre de 150 CM et 180 CM</li>
                         <li>Réalisé en 90 % polyester et 10% élastane</li>
                         <li>210 g/m²</li>
                         <li>Coloris blanc ou écru, nous consulter pour d'autres couleurs</li>
@@ -95,6 +95,48 @@
                 </div>
             </div>
         </div>
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <img class="img-produit" src="/images/catproduit/couverture/houssetablerectangulaire.jpg"></img>
+            </div>
+
+            <div class="grid_12">
+                <div class="span7">
+
+                    <h4 class="pull-top">Housse pour table rectangulaire</h4>
+                    <ul class="type">
+                        <li>Housse extensible pour table rectangulaire</li>
+                        <li>dimensionsde 183 x 76 x 74 Cm </li>
+                        <li>Réalisé en 90 % polyester et 10% élastane</li>
+                        <li>210 g/m²</li>
+                        <li>Coloris blanc, noir ou écru, nous consulter pour d'autres couleurs</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <img class="img-produit" src="/images/catproduit/couverture/houssebuffet.jpg"></img>
+            </div>
+
+            <div class="grid_12">
+                <div class="span7">
+
+                    <h4 class="pull-top">Housse pour table rectangulaire de buffet</h4>
+                    <ul class="type">
+                        <li>Housse extensible pour table rectangulaire</li>
+                        <li>Dimension de 183 x 76 x 95 Cm</li>
+                        <li>Réalisé en 90 % polyester et 10% élastane</li>
+                        <li>210 g/m²</li>
+                        <li>Coloris blanc, noir ou écru, nous consulter pour d'autres couleurs</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
     </section>
+
 
 @stop

@@ -1,215 +1,217 @@
 @extends('layouts.common')
 
 @section('content')
-    <script type="text/javascript" src="js/jssor.slider.min.js"></script>
-    <!-- use jssor.slider.debug.js instead for debug -->
-    <script>
-        jssor_1_slider_init = function() {
 
-            var jssor_1_SlideshowTransitions = [
-                {$Duration:1200,x:-0.3,$During:{$Left:[0.3,0.7]},$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2},
-                {$Duration:1200,x:0.3,$SlideOut:true,$Easing:{$Left:$Jease$.$InCubic,$Opacity:$Jease$.$Linear},$Opacity:2}
-            ];
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jQuery Photo Slide Show with Slick Caption Tutorial Revisited</title>
 
-            var jssor_1_options = {
-                $AutoPlay: true,
-                $SlideshowOptions: {
-                    $Class: $JssorSlideshowRunner$,
-                    $Transitions: jssor_1_SlideshowTransitions,
-                    $TransitionsOrder: 1
-                },
-                $ArrowNavigatorOptions: {
-                    $Class: $JssorArrowNavigator$
-                },
-                $BulletNavigatorOptions: {
-                    $Class: $JssorBulletNavigator$
-                },
-                $ThumbnailNavigatorOptions: {
-                    $Class: $JssorThumbnailNavigator$,
-                    $Cols: 1,
-                    $Align: 0,
-                    $NoDrag: true
-                }
-            };
+<script type="text/javascript" src="js/jquery-1.3.1.min.js"></script>
+<script type="text/javascript">
 
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+$(document).ready(function() {      
+    
+    //Execute the slideShow, set 4 seconds for each images
+    slideShow(4000);
 
-            //responsive code begin
-            //you can remove responsive code if you don't want the slider scales while window resizing
-            function ScaleSlider() {
-                var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
-                if (refSize) {
-                    refSize = Math.min(refSize, 600);
-                    jssor_1_slider.$ScaleWidth(refSize);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-            ScaleSlider();
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            //responsive code end
-        };
-    </script>
+});
 
-    <style>
+function slideShow(speed) {
 
-        /* jssor slider bullet navigator skin 01 css */
-        /*
-        .jssorb01 div           (normal)
-        .jssorb01 div:hover     (normal mouseover)
-        .jssorb01 .av           (active)
-        .jssorb01 .av:hover     (active mouseover)
-        .jssorb01 .dn           (mousedown)
-        */
-        .jssorb01 {
-            position: absolute;
+
+    //append a LI item to the UL list for displaying caption
+    $('ul.slideshow').append('<li id="slideshow-caption" class="caption"><div class="slideshow-caption-container"><h3></h3><p></p></div></li>');
+
+    //Set the opacity of all images to 0
+    $('ul.slideshow li').css({opacity: 0.0});
+    
+    //Get the first image and display it (set it to full opacity)
+    $('ul.slideshow li:first').css({opacity: 1.0}).addClass('show');
+    
+    //Get the caption of the first image from REL attribute and display it
+    $('#slideshow-caption h3').html($('ul.slideshow li.show').find('img').attr('title'));
+    $('#slideshow-caption p').html($('ul.slideshow li.show').find('img').attr('alt'));
+        
+    //Display the caption
+    $('#slideshow-caption').css({opacity: 0.7, bottom:0});
+    
+    //Call the gallery function to run the slideshow    
+    var timer = setInterval('gallery()',speed);
+    
+    //pause the slideshow on mouse over
+    $('ul.slideshow').hover(
+        function () {
+            clearInterval(timer);   
+        },  
+        function () {
+            timer = setInterval('gallery()',speed);         
         }
-        .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
-            position: absolute;
-            /* size of bullet elment */
-            width: 12px;
-            height: 12px;
-            filter: alpha(opacity=70);
-            opacity: .7;
-            overflow: hidden;
-            cursor: pointer;
-            border: #000 1px solid;
-        }
-        .jssorb01 div { background-color: gray; }
-        .jssorb01 div:hover, .jssorb01 .av:hover { background-color: #d3d3d3; }
-        .jssorb01 .av { background-color: #fff; }
-        .jssorb01 .dn, .jssorb01 .dn:hover { background-color: #555555; }
+    );
+    
+}
 
-        /* jssor slider arrow navigator skin 05 css */
-        /*
-        .jssora05l                  (normal)
-        .jssora05r                  (normal)
-        .jssora05l:hover            (normal mouseover)
-        .jssora05r:hover            (normal mouseover)
-        .jssora05l.jssora05ldn      (mousedown)
-        .jssora05r.jssora05rdn      (mousedown)
-        */
-        .jssora05l, .jssora05r {
-            display: block;
-            position: absolute;
-            /* size of arrow element */
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
-            background: url('img/a17.png') no-repeat;
-            overflow: hidden;
-        }
-        .jssora05l { background-position: -10px -40px; }
-        .jssora05r { background-position: -70px -40px; }
-        .jssora05l:hover { background-position: -130px -40px; }
-        .jssora05r:hover { background-position: -190px -40px; }
-        .jssora05l.jssora05ldn { background-position: -250px -40px; }
-        .jssora05r.jssora05rdn { background-position: -310px -40px; }
-
-        /* jssor slider thumbnail navigator skin 09 css */
-
-        .jssort09-600-45 .p {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 600px;
-            height: 45px;
-        }
-
-        .jssort09-600-45 .t {
-            font-family: verdana;
-            font-weight: normal;
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            color:#fff;
-            line-height: 45px;
-            font-size: 20px;
-            padding-left: 10px;
-        }
-
-    </style>
+function gallery() {
 
 
-    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
-        <!-- Loading Screen -->
-        <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-            <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
-        </div>
-        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/a.jpg" />
-                <div data-u="thumb">Do you notice it is draggable by mouse/finger?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/b.jpg" />
-                <div data-u="thumb">Did you drag by either horizontal or vertical?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/c.jpg" />
-                <div data-u="thumb">Do you notice navigator responses when drag?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/d.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/e.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/e.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/f.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/g.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/h.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/i.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
-            <div data-p="112.50" style="display: none;">
-                <img data-u="image" src="images/realisation/j.jpg" />
-                <div data-u="thumb">Do you notice arrow responses when click?</div>
-            </div>
+    //if no IMGs have the show class, grab the first image
+    var current = ($('ul.slideshow li.show')?  $('ul.slideshow li.show') : $('#ul.slideshow li:first'));
+    
+    //trying to avoid speed issue
+    if(current.queue('fx').length == 0) {   
+    
+        //Get next image, if it reached the end of the slideshow, rotate it back to the first image
+        var next = ((current.next().length) ? ((current.next().attr('id') == 'slideshow-caption')? $('ul.slideshow li:first') :current.next()) : $('ul.slideshow li:first'));
+            
+        //Get next image caption
+        var title = next.find('img').attr('title'); 
+        var desc = next.find('img').attr('alt');    
+    
+        //Set the fade in effect for the next image, show class has higher z-index
+        next.css({opacity: 0.0}).addClass('show').animate({opacity: 1.0}, 1000);
+        
+        //Hide the caption first, and then set and display the caption
+        $('#slideshow-caption').slideToggle(300, function () { 
+            $('#slideshow-caption h3').html(title); 
+            $('#slideshow-caption p').html(desc); 
+            $('#slideshow-caption').slideToggle(500); 
+        });     
+    
+        //Hide the current image
+        current.animate({opacity: 0.0}, 1000).removeClass('show');
 
-        </div>
-        <!-- Thumbnail Navigator -->
-        <div data-u="thumbnavigator" class="jssort09-600-45" style="position:absolute;bottom:0px;left:0px;width:600px;height:45px;">
-            <div style="position: absolute; top: 0; left: 0; width: 100%; height:100%; background-color: #000; filter:alpha(opacity=40.0); opacity:0.4;"></div>
-            <!-- Thumbnail Item Skin Begin -->
-            <div data-u="slides" style="cursor: default;">
-                <div data-u="prototype" class="p">
-                    <div data-u="thumbnailtemplate" class="t"></div>
-                </div>
-            </div>
-            <!-- Thumbnail Item Skin End -->
-        </div>
-        <!-- Bullet Navigator -->
-        <div data-u="navigator" class="jssorb01" style="bottom:16px;right:16px;">
-            <div data-u="prototype" style="width:12px;height:12px;"></div>
-        </div>
-        <!-- Arrow Navigator -->
-        <span data-u="arrowleft" class="jssora05l" style="top:0px;left:8px;width:40px;height:40px;" data-autocenter="2"></span>
-        <span data-u="arrowright" class="jssora05r" style="top:0px;right:8px;width:40px;height:40px;" data-autocenter="2"></span>
+    }
+
+}
+</script>
+<style type="text/css">
+
+body {
+    font-family:arial;  
+    font-size:12px;
+}
+
+ul.slideshow {
+    list-style:none;
+    width:800px;
+    height:400px;
+    overflow:hidden;
+    position:relative;
+    margin:auto;
+    padding:0;
+    margin-top:20px;
+    border: double 7px #E69400
+}   
+
+ul.slideshow li {
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+ul.slideshow li.show {
+    z-index:500;    
+}
+
+ul img {
+    border:none;  
+}
+
+
+#slideshow-caption {
+    width:450px;
+    height:70px;
+    position:absolute;
+    bottom:0;
+    left:0; 
+    color:#fff;
+    background:#000;
+    z-index:500;
+    margin: 0px;
+margin-left: 1px;
+}
+
+#slideshow-caption .slideshow-caption-container {
+    padding:5px 10px;       
+    z-index:1000;
+}
+
+#slideshow-caption h3 {
+    margin:0;
+    padding:0;  
+    font-size:14px;
+}
+
+#slideshow-caption p {
+    margin:5px 0 0 0;
+    padding:0;
+}
+
+</style>
+</head>
+<body>
+
+<div class="slogan">
+    <div class="slogan-1">
+        <span id="animationslogan" class="bounceInUp animated" style="display: block">
+            <h5>Vous recherchez de l'expérience</h5> 
+        </span>
+
+        <span id="animationslogan" class="zoomIn delay1s0ms animated" style="display: block">
+            <h7 class="abris">Vous êtes à la recherche de professionnels ?</h6>
+        </span>
     </div>
-    <script>
-        jssor_1_slider_init();
-    </script>
 
+    <div class="slogan-2">
+        <span id="animationslogan" class="rollIn delay3s0ms animated" style="display: block">
+            <h7 class="realisation">Réalisation de vos</h6>
+        </span>
+
+        <span id="animationslogan" class="bounceInDown delay4s0ms animated" style="display: block">
+            <h7 class="forum">Forums</h6>
+        </span>
+
+        <span id="animationslogan" class="bounceInDown delay5s0ms animated" style="display: block">
+            <h7 class="sport">Evènements sportifs</h6>
+        </span>
+
+        <span id="animationslogan" class="bounceInDown delay5s5ms animated" style="display: block">
+            <h7 class="gala">Marché</h6>
+        </span>
+    </div>    
+</div>
+<div class="sous-slogan">
+    <h7 class="sous-slogan"></p>
+    <a class="btn btn-large btn-primary" href="/contact/">Contactez-nous !</a>
+</div>
+
+
+
+<hr class="style18">
+
+
+
+<ul class="slideshow">
+    <li class="show">
+        <img src="images/realisation/a.jpg" title="Tentes" alt="Installation de tentes de 3 mètres sur 3 mètres sur une péniche au coeur de Paris"/></a></li>
+    <li><img src="images/realisation/b.jpg" title="Tentes" alt="Installation de tentes de couleur bleu pour un forum"/></a></li>
+    <li><img src="images/realisation/c.jpg" title="Tente de réception" alt="Tente de réception de 12 mètres par 4 mètres"/></a></li>
+    <li><img src="images/realisation/e.jpg" title="Défilé" alt="Installation de voile et ensemble pour un défilé de mode au coeur de Paris"/></a></li>
+    <li><img src="images/realisation/f.jpg" title="Tentes" alt="Installation de tentes pour un forum associatif"/></a></li>
+    <li><img src="images/realisation/g.jpg" title="Scène" alt="Installation de podium de 6 mètres par 4 mètres couvert"/></a></li>
+    <li><img src="images/realisation/h.jpg" title="Cocktail" alt="Installation de reception pour un cocktail au coeur de paris"/></a></li>
+    <li><img src="images/realisation/i.jpg" title="" alt=""/></a></li>
+    <li><img src="images/realisation/j.jpg" title="Fête" alt="Installation pour une fête de quartier"/></a></li>
+    <li><img src="images/realisation/k.jpg" title="" alt=""/></a></li>
+    <li><img src="images/realisation/m.jpg" title="Comité" alt="Installation pour un comité d'entreprise"/></a></li>
+    <li><img src="images/realisation/o.jpg" title="Mariage" alt="Installation pour un mariage/></a></li>
+    <li><img src="images/realisation/p.jpg" title="Forum" alt=""/>Installation pour un forum sportif sur un espace vert</a></li>
+    <li><img src="images/realisation/q.jpg" title="Braderie" alt=""/>Installation pour une braderie</a></li>
+</ul>
+
+<br/><br/>
+
+
+</body>
+</html>
 @stop

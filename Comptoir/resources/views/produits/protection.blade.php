@@ -33,6 +33,27 @@
 <div class="grid_24 type">
     <div class="grid_12">
         <div class="slide-produit">
+            <img class="img-produit" src="/images/catproduit/protection/poteaux.jpg"></img>
+        </div>
+    </div>
+    <div class="grid_12">
+        <div class="span7">
+            <h4 class="pull-top">Poteaux de guidage à sangle</h4>
+            <ul class="type">
+                <li>Poteaux réalisés en aluminium finition alu brossé</li>
+                <li>Hauteur de 995 x diamètre de 63 MM</li>
+                <li>Repose sur un socle de diamètre 350 MM et lesté de 9 Kg assurant une parfaite stabilité de l'ensemble</li>
+                <li>Sangle noire ou rouge </li>
+                <li>Par lot de 2</li>
+                <li>Poid de 9 KG</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="grid_24 type">
+    <div class="grid_12">
+        <div class="slide-produit">
             <img class="img-produit" src="/images/catproduit/protection/portemessage.jpg"></img>
         </div>
     </div>
@@ -87,6 +108,100 @@
             </div>
         </div>
 
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <div class="slide-produit">
+                    <img class="img-produit" src="/images/catproduit/protection/grillefinal2.jpg"</img>
+
+                </div>
+            </div>
+            <div class="grid_12">
+                <div class="span7">
+                    <h4 class="pull-top">Grille d'exposition modulable</h4>
+                    <ul class="type">
+                        <li>Grilles de 2M x 1 M réalisées en tube métallique de 25 MM de diamètre</li>
+                        <li>Peint en époxy gris martelé</li>
+                        <li>Maillage de 50 x 50 MM</li>
+                        <li>Assemblage par clips compris</li>
+                        <li>Poids 13 KG</li>
+                        </br>
+                        <li>Accessoires présent sur la deuxième photo</li>
+                        <li>Pied en "T" 2L</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+         <div class="grid_24 type">
+            <div class="grid_12">
+                <div class="slide-produit">
+                    <img class="img-produit" src="/images/catproduit/protection/grillefinal.jpg"</img>
+                </div>
+            </div>
+            <div class="grid_12">
+                <div class="span7">
+                    <h4 class="pull-top">Grille d'exposition modulable</h4>
+                    <ul class="type">
+                        <li>Traitement en gris galvanisé</li>
+                        <li>Dimension de 2 M x 1 M </li>
+                        <li>Poids 13 KG</li>
+                        </br>
+                        <li>Accessoires (pied) présent sur la deuxième photo</li>
+                        <li>Pied adaptable de H 30 x L 50 CM</li>
+                        <li>Poids de 1,5 KG</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+         <div class="grid_24 type">
+            <div class="grid_12">
+                <div class="slide-produit">
+                    <img class="img-produit" src="/images/catproduit/protection/crochet.jpg"</img>
+                </div>
+            </div>
+            <div class="grid_12">
+                <div class="span7">
+                    <h4 class="pull-top">Lot de crochets de suspension à pince</h4>
+                    <ul class="type">
+                        <li>60 x 26 x 4 MM </li>
+                        <li>Plastique noir, incassable</li>
+                    </ul>
+                </div>
+            </div>
+        </div> 
+
+         <div class="grid_24 type">
+            <div class="grid_12">
+                <div class="slide-produit">
+                    <img class="img-produit" src="/images/catproduit/protection/crochets.jpg"</img>
+                </div>
+            </div>
+            <div class="grid_12">
+                <div class="span7">
+                    <h4 class="pull-top">Lot de crochets de suspensions en S</h4>
+                    <ul class="type">
+                        <li>26 x 15 x 2 MM</li>
+                        <li>Métal chromé</li>
+                    </ul>
+                </div>
+            </div>
+        </div>             
+
+         <div class="grid_24 type">
+            <div class="grid_12">
+                <div class="slide-produit">
+                    <img class="img-produit" src="/images/catproduit/protection/pied.jpg"</img>
+                </div>
+            </div>
+            <div class="grid_12">
+                <div class="span7">
+                    <h4 class="pull-top">Pied en "T" complet 2 L + visserie</h4>
+                    <ul class="type">
+                    </ul>
+                </div>
+            </div>
+        </div>
 
    </section>
 

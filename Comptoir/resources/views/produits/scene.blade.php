@@ -18,7 +18,7 @@
             <div class="grid_12">
                 <div class="span7">
 
-                    <h4 class="pull-top">Practicable avec un cadre en aluminium rainuré avec plancher de 2M x 1 M</h4>
+                    <h4 class="pull-top">Practicable ciseaux avec un cadre en aluminium rainuré avec plancher de 2M x 1 M</h4>
                     <ul class="type">
                         <li> Charge admissible jusqu'à 750 KG/m²</li>
                         <li>Latte de hêtre (intérieur)</li>
@@ -35,6 +35,34 @@
                 </div>
             </div>
         </div>
+
+
+
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <img class="img-produit" src="/images/catproduit/support/praktikus.jpg"></img>
+            </div>
+
+            <div class="grid_12">
+                <div class="span7">
+
+                    <h4 class="pull-top">Praticable de scene Praktikus</h4>
+                    <ul class="type">
+                        <li>Plateau de 2M x 1M d'une épaisseur de 9 CM</li>
+                        <li>Cadre en aluminium rainuré</li>
+                        <li>Plancher latté de hêtre (intérieur) ou contreplaqué anti-dérapant (extérieur en option)</li>
+                        <li>équerre de renfort d'angle</li>
+                        <li>Fixation des éléments par croisillons polycarbonate</li>
+                        <li>5 types de pieds disponibles</li>
+                        <li>Hauteur standard de 20, 40, 60, 80 et 100 CM</li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+
         <div class="grid_24 type">
             <div class="grid_12">
                 <img class="img-produit" src="/images/catproduit/support/plancher.jpg"></img>
@@ -57,6 +85,7 @@
                 </div>
             </div>
         </div>
+
 
 
 

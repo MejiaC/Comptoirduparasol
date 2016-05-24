@@ -78,13 +78,14 @@
         <div class="span3">
             <div class="plan">
                 <div class="title">
-                    <h3><a href="/produits/protection">Protection</a><span></span></h3>
+                    <h3><a href="/produits/protection">Protection/Affichage</a><span></span></h3>
                 </div>
                 <div class="types-produits">
                     <ul class="produits">
                         <li><b>Poteaux de guidage</b></li>
                         <li><b>Porte messages</b></li>
                         <li><b>Barrière de sécurité</b></li>
+                        <li><b>Accessoires</b></li>
                     </ul>
                 </div>
             </div>
@@ -98,7 +99,7 @@
                 <div class="types-produits">
                     <ul class="produits">
                         <li><b>Podiums</b></li>
-                        <li><b>Planché</b></li>
+                        <li><b>Plancher</b></li>
                     </ul>
                 </div>
             </div>
@@ -106,13 +107,15 @@
         <div class="span3">
             <div class="plan">
                 <div class="title">
-                    <h3><span><a href="/produits/chauffage">Appareil chaufant</a></span></h3>
+                    <h3><span><a href="/produits/chauffage">Chauffage/Eclairage</a></span></h3>
                 </div>
                 <div class="types-produits">
                     <ul class="produits">
-                        <li><b>Chauffage à radion de gaz</b></li>
-                        <li><b>Chauffage à radion électrique</b></li>
+                        <li><b>Chauffage à gaz</b></li>
+                        <li><b>Chauffage à radion</b></li>
                         <li><b>Pied de chauffage</b></li>
+                        <li><b>Eclairage par spot</b></li>
+                        <li><b>Eclairage par guirlande</b></li>
                     </ul>
                 </div>
             </div>

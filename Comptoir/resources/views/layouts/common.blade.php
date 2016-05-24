@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+    <title>Comptoir du parasol - Location de matériel et accessoires forains</title>
+    
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/grid.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/slider.css">
-    <link href="/css/demo.css" media="screen, projection" rel="stylesheet" type="text/css">
-    <link href="/css/component.css" media="screen, projection" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/animate.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/delay.min.css">
+
 
     <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" rel="stylesheet">
 

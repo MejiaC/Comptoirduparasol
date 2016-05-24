@@ -79,6 +79,20 @@
         </div>
     </div>
 
+    <div class="grid4column services">
+        <div class="menu-item-container-services">
+                <div class="grid4column services">
+                </div>
+                <div class="grid4columnbig lastcolumn services">
+                    <br>
+                    <h4 class="pull-top">Entretien</h4>
+                    <p>Vous avez la possibilité de déposer votre matériel en magasin pour procéder au nettoyage et entretien de vos bâches</p>
+
+                </div>
+                <div class="clearfix"></div>
+        </div>
+    </div>
+
 
 
 

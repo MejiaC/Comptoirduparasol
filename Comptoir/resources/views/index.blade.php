@@ -1,4 +1,6 @@
-<?php
+ 
+<title>Comptoir du parasol - accessoires et matériel forains </title>
+ <?php
 
 $jours = [
   [

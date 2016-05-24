@@ -118,7 +118,7 @@
         <div class="grid_12">
             <div class="span7">
 
-                <h4 class="pull-top">Chaise coque empilable avec pieetements chromes ou en epoxy noir</h4>
+                <h4 class="pull-top">Chaise coque empilable avec pietements chromes ou en epoxy noir</h4>
                 <ul class="type">
                     <li>Tampons anti-bruit non tachant</li>
                     <li>La Coque visée est fabriquée en polyprolene</li>

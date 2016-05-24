@@ -80,7 +80,7 @@
                         <li>Sa résistance à la déchirure est de 40 N pour la Chaine et 30 N pour la Trame</li>
                         <li>Tenue à la lumière de 7/8</li>
                         <li>Poids de 400gr/m²</li>
-                        <li>Plusieurs couleurs disponible ( jaune, noir, bleue, orange, écru et vert). Nos contacter pour vérifier les disponibilités</li>
+                        <li>Plusieurs couleurs disponible <img src="/images/catproduit/tentes/cl.jpg"</img></li>
                     </ul>
 
 

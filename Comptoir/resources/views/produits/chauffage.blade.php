@@ -127,6 +127,46 @@
             </div>
         </div>
 
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <img class="img-produit" src="/images/catproduit/chauffage/spot.jpg"></img>
+            </div>
 
+            <div class="grid_12">
+                <div class="span7">
+
+                    <h4 class="pull-top">Eclairage par spot</h4>
+                    <ul class="type">
+                        <li>Eclairage par spot</li>
+                        <li>Type LED</li>
+                    </ul>
+
+
+
+                </div>
+            </div>
+        </div>
+        <div class="grid_24 type">
+            <div class="grid_12">
+                <img class="img-produit" src="/images/catproduit/chauffage/guirlande.jpg"></img>
+            </div>
+
+            <div class="grid_12">
+                <div class="span7">
+
+                    <h4 class="pull-top">Eclairage par guirlande lumineuse</h4>
+                    <ul class="type">
+                        <li>Guirlande lumineuse</li>
+                        <li>Eclairage LED</li>
+                        <li>Disponibles en plusieurs couleurs, nous contacter pour vérifier les disponibilités</li>
+
+                    </ul>
+
+
+
+                </div>
+            </div>
+
+        </div>
     </section>
 @stop
